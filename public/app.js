@@ -20,6 +20,8 @@ let markersLayer;
 let currentContributions = []; // Store current contributions for filtering
 let drawnItems; // Layer group for drawn shapes
 let currentShape = null; // Currently active drawn shape
+let showContributorNames = false; // Hidden by default, type "streets" to enable
+let keySequence = ''; // Buffer for detecting "streets" keyword
 
 // Map configuration
 const MAP_CONFIG = {
@@ -144,6 +146,9 @@ function setupEventListeners() {
   sizingRadios.forEach(radio => {
     radio.addEventListener('change', handleSizingChange);
   });
+
+  // Add keyboard listener for "streets" code to show contributor names
+  document.addEventListener('keypress', handleKeyPress);
 }
 
 /**
@@ -236,6 +241,75 @@ function handleFilterChange() {
  */
 function handleSizingChange() {
   applyFilter(false); // Redraw markers with new sizing, don't re-zoom
+}
+
+/**
+ * Handle keyboard input to detect "streets" code
+ */
+function handleKeyPress(event) {
+  // Ignore if typing in an input field
+  if (event.target.tagName === 'INPUT' || event.target.tagName === 'SELECT') {
+    return;
+  }
+
+  // Add character to sequence buffer
+  keySequence += event.key.toLowerCase();
+
+  // Keep only last 7 characters (length of "streets")
+  if (keySequence.length > 7) {
+    keySequence = keySequence.slice(-7);
+  }
+
+  // Check if "streets" was typed
+  if (keySequence === 'streets') {
+    if (!showContributorNames) {
+      showContributorNames = true;
+      console.log('Contributor names enabled');
+
+      // Show brief notification
+      showNotification('Contributor names enabled');
+
+      // Redraw all markers with names shown
+      applyFilter(false);
+    }
+
+    // Reset sequence
+    keySequence = '';
+  }
+}
+
+/**
+ * Show a temporary notification to the user
+ */
+function showNotification(message) {
+  // Create notification element
+  const notification = document.createElement('div');
+  notification.textContent = message;
+  notification.style.cssText = `
+    position: fixed;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #3498db;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    z-index: 10000;
+    font-size: 0.9rem;
+    font-weight: 500;
+  `;
+
+  document.body.appendChild(notification);
+
+  // Remove after 3 seconds
+  setTimeout(() => {
+    notification.style.transition = 'opacity 0.3s';
+    notification.style.opacity = '0';
+    setTimeout(() => {
+      document.body.removeChild(notification);
+    }, 300);
+  }, 3000);
 }
 
 /**
@@ -403,9 +477,14 @@ function createPopupContent(contribution) {
   const type = contribution.isIndividual ? 'Individual' : 'Business';
   const amount = formatCurrency(contribution.amount);
 
+  // Only show name if "streets" code has been entered
+  const nameHtml = showContributorNames
+    ? `<strong>${contribution.name}</strong><br>`
+    : '';
+
   return `
     <div>
-      <strong>${contribution.name}</strong><br>
+      ${nameHtml}
       <em>${type} Contribution</em><br>
       <strong>Amount:</strong> ${amount}<br>
       <strong>Date:</strong> ${contribution.date}<br>
