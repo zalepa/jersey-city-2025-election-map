@@ -11,6 +11,8 @@
  * 4. Run `npm run geocode` to geocode all addresses
  */
 
+require('dotenv').config();
+
 const express = require('express');
 const fs = require('fs');
 const path = require('path');
@@ -219,25 +221,24 @@ async function geocodeAddress(address, city, state, zip) {
   // First attempt: try with cleaned address
   try {
     const query = encodeURIComponent(addressToGeocode);
-    const url = `https://nominatim.openstreetmap.org/search?format=json&q=${query}&limit=1`;
+    const apiKey = process.env.GOOGLE_MAPS_API_KEY;
+    const url = `https://maps.googleapis.com/maps/api/geocode/json?address=${query}&key=${apiKey}`;
 
-    const response = await fetch(url, {
-      headers: {
-        'User-Agent': 'CampaignContributionsMap/1.0'
-      }
-    });
+    const response = await fetch(url);
+    const data = await response.json();
 
-    const results = await response.json();
-
-    if (results && results.length > 0) {
+    if (data.status === 'OK' && data.results && data.results.length > 0) {
       const coords = {
-        lat: parseFloat(results[0].lat),
-        lng: parseFloat(results[0].lon)
+        lat: data.results[0].geometry.location.lat,
+        lng: data.results[0].geometry.location.lng
       };
       geocodeCache[addressToGeocode] = coords;
       geocodeCache[originalFullAddress] = coords;
       saveGeocodeCache();
       return coords;
+    } else if (data.status !== 'ZERO_RESULTS') {
+      // Log non-zero-results errors (API errors, quota issues, etc.)
+      console.error('Google Geocoding API error:', data.status, data.error_message || '');
     }
   } catch (error) {
     console.error('Geocoding error for:', addressToGeocode, error.message);
@@ -253,20 +254,16 @@ async function geocodeAddress(address, city, state, zip) {
 
       try {
         const query = encodeURIComponent(fallbackAddressToGeocode);
-        const url = `https://nominatim.openstreetmap.org/search?format=json&q=${query}&limit=1`;
+        const apiKey = process.env.GOOGLE_MAPS_API_KEY;
+        const url = `https://maps.googleapis.com/maps/api/geocode/json?address=${query}&key=${apiKey}`;
 
-        const response = await fetch(url, {
-          headers: {
-            'User-Agent': 'CampaignContributionsMap/1.0'
-          }
-        });
+        const response = await fetch(url);
+        const data = await response.json();
 
-        const results = await response.json();
-
-        if (results && results.length > 0) {
+        if (data.status === 'OK' && data.results && data.results.length > 0) {
           const coords = {
-            lat: parseFloat(results[0].lat),
-            lng: parseFloat(results[0].lon)
+            lat: data.results[0].geometry.location.lat,
+            lng: data.results[0].geometry.location.lng
           };
           console.log(`  ✓ Fallback succeeded: "${originalFullAddress}" -> "${fallbackAddressToGeocode}"`);
           geocodeCache[addressToGeocode] = coords;

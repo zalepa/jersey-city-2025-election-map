@@ -8,6 +8,8 @@
  * Usage: node geocode-data.js
  */
 
+require('dotenv').config();
+
 const fs = require('fs');
 const path = require('path');
 const csv = require('csv-parser');
@@ -159,22 +161,23 @@ async function geocodeAddress(address, city, state, zip) {
   // First attempt: try with cleaned address
   try {
     const query = encodeURIComponent(addressToGeocode);
-    const url = `https://nominatim.openstreetmap.org/search?format=json&q=${query}&limit=1`;
+    const apiKey = process.env.GOOGLE_MAPS_API_KEY;
+    const url = `https://maps.googleapis.com/maps/api/geocode/json?address=${query}&key=${apiKey}`;
 
-    const response = await fetch(url, {
-      headers: { 'User-Agent': 'CampaignContributionsMap/1.0' }
-    });
+    const response = await fetch(url);
+    const data = await response.json();
 
-    const results = await response.json();
-
-    if (results && results.length > 0) {
+    if (data.status === 'OK' && data.results && data.results.length > 0) {
       const coords = {
-        lat: parseFloat(results[0].lat),
-        lng: parseFloat(results[0].lon)
+        lat: data.results[0].geometry.location.lat,
+        lng: data.results[0].geometry.location.lng
       };
       geocodeCache[addressToGeocode] = coords;
       geocodeCache[originalFullAddress] = coords;
       return coords;
+    } else if (data.status !== 'ZERO_RESULTS') {
+      // Log non-zero-results errors (API errors, quota issues, etc.)
+      console.error('Google Geocoding API error:', data.status, data.error_message || '');
     }
   } catch (error) {
     console.error('Geocoding error:', addressToGeocode, error.message);
@@ -190,18 +193,16 @@ async function geocodeAddress(address, city, state, zip) {
 
       try {
         const query = encodeURIComponent(fallbackAddressToGeocode);
-        const url = `https://nominatim.openstreetmap.org/search?format=json&q=${query}&limit=1`;
+        const apiKey = process.env.GOOGLE_MAPS_API_KEY;
+        const url = `https://maps.googleapis.com/maps/api/geocode/json?address=${query}&key=${apiKey}`;
 
-        const response = await fetch(url, {
-          headers: { 'User-Agent': 'CampaignContributionsMap/1.0' }
-        });
+        const response = await fetch(url);
+        const data = await response.json();
 
-        const results = await response.json();
-
-        if (results && results.length > 0) {
+        if (data.status === 'OK' && data.results && data.results.length > 0) {
           const coords = {
-            lat: parseFloat(results[0].lat),
-            lng: parseFloat(results[0].lon)
+            lat: data.results[0].geometry.location.lat,
+            lng: data.results[0].geometry.location.lng
           };
           console.log(`  ✓ Fallback succeeded: "${originalFullAddress}" -> "${fallbackAddressToGeocode}"`);
           geocodeCache[addressToGeocode] = coords;
@@ -269,7 +270,7 @@ async function processCSV(csvFile) {
   }
 
   console.log(`  Need to geocode ${uncachedAddresses.length} new addresses`);
-  console.log(`  This will take approximately ${Math.ceil(uncachedAddresses.length * 1.1 / 60)} minutes...\n`);
+  console.log(`  Geocoding with Google Maps API (no rate limiting needed)...\n`);
 
   // Geocode new addresses
   for (let i = 0; i < uncachedAddresses.length; i++) {
@@ -288,8 +289,8 @@ async function processCSV(csvFile) {
       fs.writeFileSync(GEOCODE_CACHE_FILE, JSON.stringify(geocodeCache, null, 2));
     }
 
-    // Rate limit: 1 request per second
-    await sleep(1100);
+    // Small delay to be respectful to the API (Google allows 50 req/sec)
+    await sleep(50);
   }
 
   console.log(`  Completed ${csvFile}`);
