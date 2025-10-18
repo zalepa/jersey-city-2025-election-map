@@ -8778,5 +8778,1889 @@
   "600 HECK STREET, ASBURY PARK, NJ, 07712": {
     "lat": 40.217707,
     "lng": -74.006119
+  },
+  "34 WALMAN AVENUE, CLIFTON, NJ, 07011": {
+    "lat": 40.8817028,
+    "lng": -74.1615817
+  },
+  "12 COLES ST, JERSEY CITY, NJ, 07302": {
+    "lat": 40.7218323,
+    "lng": -74.0478954
+  },
+  "287 GROVE ST, JERSEY CITY, NJ, 07302": {
+    "lat": 40.7181379,
+    "lng": -74.0440423
+  },
+  "16 SHELTERWOOD PL, DANVILLE, CA, 94506": {
+    "lat": 37.7935388,
+    "lng": -121.8987403
+  },
+  "128 SPRING RIDGE DR, MURPHY, TX, 75094": {
+    "lat": 33.0247429,
+    "lng": -96.6141272
+  },
+  "2315 TIOGA DRIVE, MENLO PARK, CA, 94025": {
+    "lat": 37.429585,
+    "lng": -122.2129593
+  },
+  "8 GULICKS LN, CRANBURY, NJ, 08512": null,
+  "181 GRAYSON DR, BELLE MEAD, NJ, 08502": null,
+  "1408 CHADWORTH CT, PITTSBURGH, PA, 15237": null,
+  "181 GRAYSON DROVE, BELLE MEAD, NJ, 08502": null,
+  "56 MEADOW RUN RD, BORDENTOWN TOWNSHIP, NJ, 08505": {
+    "lat": 40.1241543,
+    "lng": -74.7298372
+  },
+  "16298 REMINGTON DRIVE, GREENWOOD, IN, 46037": null,
+  "89 BUCKLEY RD, MARLBORO, NJ, 07746": {
+    "lat": 40.2981753,
+    "lng": -74.2444381
+  },
+  "90 CLIFTON AVE, FL 1, CLIFTON, NJ": null,
+  "6468 EVENING STAR, HUNTINGTON BEACH, CA, 92648": {
+    "lat": 33.689597,
+    "lng": -118.0160279
+  },
+  "11 IVES COURT, MONROE TOWNSHIP, NJ, 08831-1625": {
+    "lat": 40.3469686,
+    "lng": -74.4234612
+  },
+  "246 EAST 46TH STREET APARTMENT #7B, NEW YORK, NY, 10017": null,
+  "2273 ALAQUA DRIVE, LONGWOOD, FL, 32779-3123": null,
+  "545 E. TOWN STREET, COLUMBUS, OH, 43215": {
+    "lat": 39.9603988,
+    "lng": -82.9854472
+  },
+  "7837 WESTMONT LANE, MCLEAN, VA, 22102": null,
+  "235 LAKEVIEW AVENUE, MONTCLAIR, NJ, 07042-1909": null,
+  "1441 BROADWAY APT 5036, MANHATTAN, NY, 10018": null,
+  "15 LORI LN, HOLMDEL, NJ, 07733": {
+    "lat": 40.395293,
+    "lng": -74.202127
+  },
+  "15 LORI LANE, HOLMDEL, NJ, 07733": {
+    "lat": 40.395293,
+    "lng": -74.202127
+  },
+  "97 LIBERTY AVENUE, TOTOWA, NJ, 07512": null,
+  "11783 E. BERYL AVE., SCOTTSDALE, AZ, 85259": {
+    "lat": 33.5790175,
+    "lng": -111.8264725
+  },
+  "808 ADELAIDE PL, SANTA MONICA, CA, 90402": {
+    "lat": 34.0333954,
+    "lng": -118.5081513
+  },
+  "721 DOWNING STREET, PARLIN, NJ, 08859": null,
+  "69 GLENN EAGLES DRIVE, SOUTHINGTON, CT, 06489": null,
+  "975 MAPLE ST, MANSFIELD, MA, 02048": {
+    "lat": 42.0477292,
+    "lng": -71.1699088
+  },
+  "1626 BROWN STREET, ALLENTOWN, PA, 18104": {
+    "lat": 40.6232025,
+    "lng": -75.5031355
+  },
+  "2 CRABAPPLE CT, PRINCETON, NJ, 08540": null,
+  "1213 MEETINGHOUSE RD, GWYNEDD, PA, 19454": {
+    "lat": 40.2053895,
+    "lng": -75.2492479
+  },
+  "5660 OLD MILE HILL RD OREFIELD, LEHIGH COUNTY, PA, 18069": null,
+  "2008 CROCKER STREET, HOUSTON, TX, 77006": {
+    "lat": 29.7506767,
+    "lng": -95.3897836
+  },
+  "3657 WILLOW LN, TOLEDO, OH, 43615": {
+    "lat": 41.6851841,
+    "lng": -83.6538164
+  },
+  "26 CENTER STREET, STATEN ISLAND, NY, 10306-1419": {
+    "lat": 40.5721228,
+    "lng": -74.1354416
+  },
+  "173 79TH STREET, BROOKLYN, NY, 11209": {
+    "lat": 40.6296035,
+    "lng": -74.0324652
+  },
+  "72 STONE HILL DR, ROCKY HILL, CT, 06067": null,
+  "79 OGLE RD, OLD TAPPAN, NJ, 07675": {
+    "lat": 41.026644,
+    "lng": -73.984213
+  },
+  "110 LAKE RD, BASKING RIDGE, NJ, 07920": {
+    "lat": 40.6933897,
+    "lng": -74.5596179
+  },
+  "1328 WATERDOWN DRIVE, ALLEN, TX, 75013": {
+    "lat": 33.120452,
+    "lng": -96.7247969
+  },
+  "8 MAIDA RD, EDISON, NJ, 08820": {
+    "lat": 40.5672469,
+    "lng": -74.378589
+  },
+  "352 WAYNE ST, JERSEY CITY, NJ, 07302": {
+    "lat": 40.7238119,
+    "lng": -74.058395
+  },
+  "5062 BEECH COURT, MONMOUTH JUNCTION, NJ, 08852": null,
+  "205 W 57TH STREET, NEW YORK, NY, 10019-2020": {
+    "lat": 40.7659094,
+    "lng": -73.9804675
+  },
+  "307 HARRIS ST, CARTERET, NJ, 07008": {
+    "lat": 40.5808667,
+    "lng": -74.2183166
+  },
+  "1724 GORMAN, CANTON, MI, 48187": {
+    "lat": 42.3184739,
+    "lng": -83.4948386
+  },
+  "9 DOREEN CT, EDISON, NJ, 08820": {
+    "lat": 40.5608224,
+    "lng": -74.3528098
+  },
+  "212 FOREST RIDGE CT, FRANKLIN LAKES, NJ, 07417": {
+    "lat": 41.0410558,
+    "lng": -74.1952456
+  },
+  "240 BORREGO, IRVINE, CA, 92618": {
+    "lat": 33.697044,
+    "lng": -117.7134739
+  },
+  "26 THACKERAY DRIVE, ROSELAND, NJ, 07068": {
+    "lat": 40.8096431,
+    "lng": -74.2863777
+  },
+  "50 LEXIE LN, SOUTH WINDSOR, CT, 06074": {
+    "lat": 41.8209017,
+    "lng": -72.6026424
+  },
+  "212 FOREST RIDGE COURT, FRANKLIN LAKES, NJ, 07417": {
+    "lat": 41.0410558,
+    "lng": -74.1952456
+  },
+  "835 BRUSH HOLLOW ROAD, WESTBURY, NY, 11590": {
+    "lat": 40.7658668,
+    "lng": -73.5707756
+  },
+  "209 MADISON STREET, LYNDHURST, NJ, 07071": {
+    "lat": 40.8072776,
+    "lng": -74.1091892
+  },
+  "6 SAXON COURT, FREEHOLD, NJ, 07728": {
+    "lat": 40.2907411,
+    "lng": -74.2604501
+  },
+  "763 ARBOR RD, PARAMUS, NJ, 07625": {
+    "lat": 40.9720334,
+    "lng": -74.0705372
+  },
+  "2 EVERGREEN CT, WARREN, NJ, 07059": {
+    "lat": 40.598652,
+    "lng": -74.528711
+  },
+  "1435 HUNTINGTON AVE, SUITE 200, SOUTH SAN FRANCISCO, CA": null,
+  "12 ESTHER DR E, DAYTON, NJ, 08810": null,
+  "2405 BRISABANE LANE, PLANO, TX, 75075": null,
+  "PO BOX 507, NEW YORK, NY, 10024": null,
+  "89 OXFORD DR, SOUTH WINDSOR, CT, 06074": {
+    "lat": 41.8497497,
+    "lng": -72.5374089
+  },
+  "16 EAST 29 STREET, BAYONNE, NJ, 07002": null,
+  "18 RAVENSWOOD LN, SCOTCH PLAINS, NJ, 07076": {
+    "lat": 40.6089896,
+    "lng": -74.3931882
+  },
+  "88 PALISADE AVENUE, JERSEY CITY, NJ, 07306": {
+    "lat": 40.7322053,
+    "lng": -74.0518599
+  },
+  "804 14TH AVE,PATERSON, NJ 07524,USA, PATERSON, NJ": null,
+  "804 14TH AVENUE, PATERSON, NJ, 07504": {
+    "lat": 40.9157001,
+    "lng": -74.1408531
+  },
+  "986 52ND STREET, BROOKLYN, NY, 11219": {
+    "lat": 40.6374931,
+    "lng": -74.0009025
+  },
+  "12 HAMPSHIRE RD, PARAMUS, NJ, 07652": {
+    "lat": 40.975198,
+    "lng": -74.0842611
+  },
+  "370 RICH AVE, MOUNT VERNON, NY, 10552": {
+    "lat": 40.9237103,
+    "lng": -73.8322994
+  },
+  "10311 MCBROOM ST, LOS ANGELES COUNTY, CA, 91040": {
+    "lat": 34.2638479,
+    "lng": -118.3549419
+  },
+  "905 DE SIMONE CT, RAMSEY, NJ, 07446": {
+    "lat": 41.0767027,
+    "lng": -74.1370774
+  },
+  "1945 JOSEPH DR, MORAGA, CA, 94556": {
+    "lat": 37.84783,
+    "lng": -122.1026119
+  },
+  "616 AMBOY AVE, WOODBRIDGE, NJ, 07095": {
+    "lat": 40.5611739,
+    "lng": -74.2854564
+  },
+  "616 AMBOY AVENUE, WOODBRIDGE, NJ, 07095": {
+    "lat": 40.5611739,
+    "lng": -74.2854564
+  },
+  "315 WELLESLEY STREET, WESTON, MA, 02493": {
+    "lat": 42.345187,
+    "lng": -71.3063432
+  },
+  "82 W RUBY AVENUE, PALISADES PARK, NJ, 70650": {
+    "lat": 40.8448462,
+    "lng": -74.0036648
+  },
+  "27 HUDSON AVE, RIDGEFIELD PARK, NJ, 07660": {
+    "lat": 40.854128,
+    "lng": -74.020881
+  },
+  "15 PATRIOTS TRAIL, TOTOWA, NJ, 07512": {
+    "lat": 40.9170444,
+    "lng": -74.21384
+  },
+  "22 PLEASANT ST, WEST BRUDGEWATER, MA, 02379": null,
+  "11 COBTAIL WAY UNIT 11, SIMSBURY, CT, 06070": null,
+  "468 INVERNESS LN, LONGMEADOW, MA, 01106": {
+    "lat": 42.0475258,
+    "lng": -72.5488114
+  },
+  "324 SIP AVE, JERSEY CITY, NJ, 07306": {
+    "lat": 40.7331942,
+    "lng": -74.0755276
+  },
+  "22653 GARROD RD, SARATOGA, CA, 95070": {
+    "lat": 37.2757745,
+    "lng": -122.0548492
+  },
+  "1708 STEVENSAN DR, SEWICKLEY, PA, 15143": null,
+  "14 WYNWOOD DR, PRINCETON JUNCTION, NJ, 08550": null,
+  "219 FREEMAN AVE, JERSEY CITY, NJ, 07306": {
+    "lat": 40.7301537,
+    "lng": -74.0819225
+  },
+  "294 RANDOLPH AVENUE, JERSEY CITY, NJ, 07304": {
+    "lat": 40.7130358,
+    "lng": -74.0691456
+  },
+  "324 SIP AVENUE, JERSEY CITY, NJ, 07306": {
+    "lat": 40.7331942,
+    "lng": -74.0755276
+  },
+  "23003 WALDERFORD DR, KATY, TX, 77450": {
+    "lat": 29.782061,
+    "lng": -95.7702084
+  },
+  "20 EXCHANGE PLACE APT 2007, NEW YORK, NY, 10005": null,
+  "3 SMOKE RISE COURT, MONTVALE, NJ, 07645": {
+    "lat": 41.0645926,
+    "lng": -74.0637859
+  },
+  "9910 S MIRALAGO WAY, PARKLAND, FL, 33076-4583": {
+    "lat": 26.3355733,
+    "lng": -80.2604887
+  },
+  "26 GLEN GOIN DRIVE, ALPINE, NJ, 07620": {
+    "lat": 40.9430842,
+    "lng": -73.9245522
+  },
+  "719 WESTMINSTER RD, BROOKLYN, NY, 11230": {
+    "lat": 40.6316427,
+    "lng": -73.9651893
+  },
+  "161 E 9TH ST, CLIFTON, NJ, 07011": {
+    "lat": 40.885636,
+    "lng": -74.140309
+  },
+  "907 MITCHELL CT, BLOOMFIELD HILLS, MI, 48304": {
+    "lat": 42.5996413,
+    "lng": -83.2296231
+  },
+  "10 TEMPLE CT, STATEN ISLAND, NY, 10314": {
+    "lat": 40.5931113,
+    "lng": -74.1858904
+  },
+  "10921 W 64TH ST, SHAWNEE, KS, 66203-3548": {
+    "lat": 39.0132826,
+    "lng": -94.712904
+  },
+  "1672 HERITAGE DR, PITTSBURGH, PA, 15237-7612": null,
+  "7945 KENNETH AVE, SKOKIE, IL, 60076": {
+    "lat": 42.025911,
+    "lng": -87.738955
+  },
+  "25 DEAN ST, BROOKLYN, NY, 11201": {
+    "lat": 40.6882073,
+    "lng": -73.9919082
+  },
+  "13701 OAKLANDS MANOR DRIVE, LAUREL, MD, 20708": {
+    "lat": 39.076324,
+    "lng": -76.8628756
+  },
+  "32 ENGLAND RD, MONROE TOWNSHIP, NJ, 08831": {
+    "lat": 40.2873295,
+    "lng": -74.4558647
+  },
+  "52 WOODLAND DRIVE, PLAINSBORO, NJ, 08536": {
+    "lat": 40.3388281,
+    "lng": -74.5706228
+  },
+  "28 BERKSHIRE DRIVE, PRINCETON JUNCTION, NJ, 08550": {
+    "lat": 40.316298,
+    "lng": -74.615147
+  },
+  "52 WOODLAND DR, PLAINSBORO, NJ, 08536": {
+    "lat": 40.3388281,
+    "lng": -74.5706228
+  },
+  "1 WEMBLEY PL, PISCATAWAY TOWNSHIP, NJ, 08854": {
+    "lat": 40.537033,
+    "lng": -74.446753
+  },
+  "93 ROCKLEDGE DR, SOUTH WINDSOR, CT, 06074": {
+    "lat": 41.8585394,
+    "lng": -72.5445841
+  },
+  "28 BERKSHIRE DR, WEST WINDSOR TOWNSHIP, NJ, 08550": {
+    "lat": 40.316298,
+    "lng": -74.615147
+  },
+  "9295 W MARSH ISLAND DRIVE, VERO BEACH, FL, 32963": null,
+  "95 JEFFERSON ST APT 2, WEEHAWKEN, NJ, 07086": null,
+  "141 TEANECK RD, TEANECK, NJ, 07666": {
+    "lat": 40.868076,
+    "lng": -74.014675
+  },
+  "16370 MATILIJA DR, LOS GATOS, CA, 95030": null,
+  "2016 DIXON ROAD, FREDERICK, MD, 21704": {
+    "lat": 39.2871725,
+    "lng": -77.3481922
+  },
+  "24 CHOPIN CT, JERSEY CITY, NJ, 07302": {
+    "lat": 40.7216791,
+    "lng": -74.0560827
+  },
+  "411 GROVE STREET, NORTH PLAINFIELD, NJ, 07060-3642": {
+    "lat": 40.6245745,
+    "lng": -74.4393368
+  },
+  "8412 KENNEDY BLVD, NORTH BERGEN, NJ, 07047": {
+    "lat": 40.8069085,
+    "lng": -74.0090652
+  },
+  "860 HURON RD, FRANKLIN LAKES, NJ, 07417": {
+    "lat": 40.998979,
+    "lng": -74.207011
+  },
+  "190 GRANT AVENUE, CRESSKILLL, NJ, 07626": null,
+  "24 LYLE AVE, WAYNE, NJ, 07470": {
+    "lat": 40.9317341,
+    "lng": -74.2140358
+  },
+  "24 LYLE AVENUE, WAYNE, NJ, 07470": {
+    "lat": 40.9317341,
+    "lng": -74.2140358
+  },
+  "825 RIVERSIDE DRIVE, TOTOWA, NJ, 07512": null,
+  "15525 SWITZER RD, OVERLAND PARK, KS, 66221": {
+    "lat": 38.8473335,
+    "lng": -94.7050213
+  },
+  "9400 MARION, MORTON GROVE, IL, 60053": {
+    "lat": 42.051815,
+    "lng": -87.804804
+  },
+  "1305 GIBRALTAR ST, PLANO, TX, 75074": {
+    "lat": 33.0111248,
+    "lng": -96.6485393
+  },
+  "20961 NIGHTSHADE PL, ASHBURN, VA, 20147": {
+    "lat": 39.0355534,
+    "lng": -77.4935961
+  },
+  "34 SHERWOOD ROAD, COLONIA, NJ, 07067": {
+    "lat": 40.588482,
+    "lng": -74.313315
+  },
+  "34 SHERWOOD RD, COLONIA, NJ, 07067": {
+    "lat": 40.588482,
+    "lng": -74.313315
+  },
+  "559 19TH AVE, SAN FRANCISCO, CA, 94121": {
+    "lat": 37.7773514,
+    "lng": -122.4783188
+  },
+  "14 WINCHESTER DR, EAST BRUNSWICK, NJ, 08816-3385": {
+    "lat": 40.4079402,
+    "lng": -74.4277953
+  },
+  "7 ROCKY HILL ROAD, PRINCETON, NJ, 08540": {
+    "lat": 40.3651396,
+    "lng": -74.750416
+  },
+  "68 CHURCH LN, EAST BRUNSWICK, NJ, 08816-2514": {
+    "lat": 40.4103195,
+    "lng": -74.4478332
+  },
+  "19 SETTER PL, KENDALL PARK, NJ, 08824": null,
+  "19 SETTLER PLACE, KENDALL PARK, NJ, 08824": null,
+  "7440 N SEPULVEDA BLVD, LOS ANGELES, CA, 91405": {
+    "lat": 34.1039905,
+    "lng": -118.4778662
+  },
+  "1130 SOUTH MICHIGAN AVENUE, CHICAGO, IL, 60605": {
+    "lat": 41.8685236,
+    "lng": -87.624603
+  },
+  "111 MULBERRY STREET, NEWARK, NJ, 07102": {
+    "lat": 40.7354471,
+    "lng": -74.1690119
+  },
+  "111 MULBERRY STREET, APT 3V, NEWARK, NJ": null,
+  "39-24 MORLOT AVENUE, FAIR LAWN, NJ, 07410-4951": {
+    "lat": 40.9245458,
+    "lng": -74.138925
+  },
+  "2103 BAYSHORE BLVD, TAMPA, FL, 33606": {
+    "lat": 27.9260938,
+    "lng": -82.4815479
+  },
+  "602 81ST STREET, NORTH BERGEN, NJ, 07047": {
+    "lat": 40.8033875,
+    "lng": -74.0064691
+  },
+  "602 81 STREET, NORTH BERGEN, NJ, 07047": null,
+  "10 STAYMAN CT, MANALAPAN, NJ, 07726": {
+    "lat": 40.2305585,
+    "lng": -74.3366922
+  },
+  "270 JOHNSTON AVE APT 2104, JERSEY CITY, NJ, 07304": null,
+  "101 MICHAEL CT, MOORESTOWN, NJ, 08057": {
+    "lat": 39.983157,
+    "lng": -74.920603
+  },
+  "10 WESSEX CT, PITTSFORD, NY, 14534": {
+    "lat": 43.0763374,
+    "lng": -77.5571724
+  },
+  "312 PACIFIC AVE, PIEDMONT, CA, 94611": {
+    "lat": 37.824821,
+    "lng": -122.226589
+  },
+  "244 1/2 1ST ST, JERSEY CITY, NJ, 07302": {
+    "lat": 40.7221481,
+    "lng": -74.0481389
+  },
+  "120 ALBANY STREET, TOWER ONE, 8TH FL., NEW BRUNSWICK": null,
+  "1060 FRANCIS AVE, WALLA WALLA, WA, 99362": {
+    "lat": 46.0695922,
+    "lng": -118.3153781
+  },
+  "25 WEST 54TH STREET, APT 7AB, NEW YORK, NY": null,
+  "19 KENSINGTON AVENUE, 401, JERSEY CITY, NJ": {
+    "lat": 40.7218966,
+    "lng": -74.0729184
+  },
+  "19 KENSINGTON AVENUE, JERSEY CITY, NJ, 07304": {
+    "lat": 40.7218966,
+    "lng": -74.0729184
+  },
+  "357 COMMERCIAL ST APT 712, BOSTON, MA, 02109": null,
+  "503 S HARBOR BLVD, FULLERTON, CA, 92832": {
+    "lat": 33.8660526,
+    "lng": -117.9241123
+  },
+  "127 JERICHO TPKE, OLD WESTBURY, NY, 11568": {
+    "lat": 40.7619325,
+    "lng": -73.6128215
+  },
+  "45 OVERLOOK AVENUE, HALEDON, NJ, 07508": {
+    "lat": 40.9524211,
+    "lng": -74.1869758
+  },
+  "9318 WALDEN RD, SILVER SPRING, MD, 20901": null,
+  "15 WASHINGTON STREET, NEWARK, NJ, 07102": {
+    "lat": 40.7442925,
+    "lng": -74.1709015
+  },
+  "25 W 54TH ST APT 7AB, NEW YORK CITY, NY, 10019": null,
+  "327 W SOUTH ORANGE AVE., SOUTH ORANGE, NJ, 07079": {
+    "lat": 40.7485961,
+    "lng": -74.2686426
+  },
+  "81 DEHART DR, MONTGOMERY, NJ, 08502": {
+    "lat": 40.4401355,
+    "lng": -74.6374084
+  },
+  "350 WARREN STREET, JERSEY CITY, NJ, 07302": {
+    "lat": 40.7200248,
+    "lng": -74.0378045
+  },
+  "PO BOX 605, NEW VERNON, NJ, 07976": null,
+  "350 MERCER LOOP, JERSEY CITY, NJ, 07302": {
+    "lat": 40.7230658,
+    "lng": -74.0586923
+  },
+  "342 MERCER ST, JERSEY CITY, NJ, 07302": {
+    "lat": 40.7201807,
+    "lng": -74.0500328
+  },
+  "342 MERCER STREET, JERSEY CITY, NJ, 07302-3118": {
+    "lat": 40.7201807,
+    "lng": -74.0500328
+  },
+  "PLEASE PROVIDE THE FULL STREET ADDRESS TO ADJUST., TEMPE, AZ, 85284": null,
+  "13 HARMONY LN, MONMOUTH JUNCTION, NJ, 08852-2813": null,
+  "25 CHRISTOPHER COLUMBUS DRIVE APT 5403,JERSEY CITY, JERSEY CITY, NJ, 07302": null,
+  "19 ROCCO DRIVE, EAST LYME, CT, 06333": {
+    "lat": 41.3974076,
+    "lng": -72.2199113
+  },
+  "13 HARMONY LN, SOUTH BRUNSWICK TOWNSHIP, NJ, 08852": null,
+  "25 CHRISTOPHER COLUMBUS DRIVE #5403, JERSEY CITY, NJ, 07302": null,
+  "11 OVERLOOK DR, WARREN, NJ, 07059": {
+    "lat": 40.6416678,
+    "lng": -74.4931061
+  },
+  "177 WEST OAK STREET, BASKING RIDGE, NJ, 07920": {
+    "lat": 40.7060031,
+    "lng": -74.5645383
+  },
+  "3961 LONGFELLOW ST, ALLENTOWN, PA, 18104": null,
+  "215 MURRIN CT, MARS, PA, 16046": null,
+  "15309 PERRY ST, OVERLAND PARK, KS, 66225": {
+    "lat": 38.8513611,
+    "lng": -94.7035889
+  },
+  "81 MONTICELLO WAY, SOUTH RIVER, NJ, 08882": {
+    "lat": 40.4332732,
+    "lng": -74.370621
+  },
+  "194 EAST 2ND STREET  2L, NEW YORK, NY, 10009": null,
+  "49 ROMAINE AVE, JERSEY CITY, NJ, 07306-5603": {
+    "lat": 40.7314625,
+    "lng": -74.0701939
+  },
+  "299 FULTON STREET, MIDDLESEX, NJ, 08846": {
+    "lat": 40.5826962,
+    "lng": -74.4901492
+  },
+  "530 SILAS DEANE HWY, WETHERSFIELD, CT, 06109": {
+    "lat": 41.711068,
+    "lng": -72.663051
+  },
+  "299 FULTON STREET, MIDDLESEX, NJ, 08460": {
+    "lat": 40.483182,
+    "lng": -74.45742
+  },
+  "1165 SAN SEBASTIAN CT, GROVER BEACH, CA, 93433": {
+    "lat": 35.1092345,
+    "lng": -120.6076215
+  },
+  "4 BEACON WAY APT 18, JERSEY CITY, NJ, 07304": null,
+  "220 9TH STREET, JERSEY CITY, NJ, 07302": {
+    "lat": 40.7282666,
+    "lng": -74.0430242
+  },
+  "107 CURTIS CT, MARS, PA, 16046": null,
+  "601 WILLIAM STREET, OAKLAND, CA, 94612": {
+    "lat": 37.8090129,
+    "lng": -122.2724885
+  },
+  "10424 S CAMPBELL, CHICAGO, IL, 60655": {
+    "lat": 41.7037474,
+    "lng": -87.6842972
+  },
+  "15400 LARSEN ST, OVERLAND PARK, KS, 66221": {
+    "lat": 38.8501115,
+    "lng": -94.7077192
+  },
+  "14841 COPPERFIELD PL, WAYZATA, MN, 55391": null,
+  "1966 JOHN F KENNEDY BOULEVARD, JERSEY CITY, NJ, 07305": {
+    "lat": 40.7068662,
+    "lng": -74.0885724
+  },
+  "1445 MELROSE PARKWAY, NORFOLK, VA, 23508": {
+    "lat": 36.8879426,
+    "lng": -76.3100747
+  },
+  "1966 KENNEDY BOULEVARD, JERSEY CITY, NJ, 07305": {
+    "lat": 40.7068662,
+    "lng": -74.0885724
+  },
+  "605 PAVONIA AVENUE APT 3306, JERSEY CITY, NJ, 07306": null,
+  "8407 KENNEDY BLVD, NORTH BERGEN, NJ, 07047": {
+    "lat": 40.807008,
+    "lng": -74.009241
+  },
+  "32 CULVER AVENUE, JERSEY CITY, NJ, 07305": {
+    "lat": 40.711586,
+    "lng": -74.0882422
+  },
+  "14 LINE ROAD, HOLMDEL, NJ, 07733": {
+    "lat": 40.379821,
+    "lng": -74.198115
+  },
+  "24 W 40TH, BAYONNE, NJ, 07002": {
+    "lat": 40.6771897,
+    "lng": -74.1084295
+  },
+  "44 E BROAD ST, BERGENFIELD, NJ, 07621": {
+    "lat": 40.9204783,
+    "lng": -73.9949867
+  },
+  "50 CONSTITUTION WAY, JERSEY CITY, NJ, 07305": {
+    "lat": 40.689988,
+    "lng": -74.0714817
+  },
+  "9 OAK HILL DR, WAYNE, NJ, 07470": {
+    "lat": 40.9464166,
+    "lng": -74.2677754
+  },
+  "214 PARK LANE, WAYNE, NJ, 07470": {
+    "lat": 40.888277,
+    "lng": -74.2359444
+  },
+  "2800 ALMANZOR AVE, IRVING, TX, 75062": {
+    "lat": 32.844043,
+    "lng": -97.01451
+  },
+  "8 PILUSO WAY, PISCATAWAY, NJ, 08854": {
+    "lat": 40.531374,
+    "lng": -74.4607314
+  },
+  "821 INDIAN ROCK AVE, BERKELEY, CA, 94707": {
+    "lat": 37.8928028,
+    "lng": -122.2696518
+  },
+  "313 EAST 18TH STREET, NEW YORK, NY, 10003": {
+    "lat": 40.7346649,
+    "lng": -73.9823009
+  },
+  "151 EAGLE ROCK RD, STOUGHTON, MA, 02072": {
+    "lat": 42.0772942,
+    "lng": -71.1310832
+  },
+  "2656 BATCHELDER ST, BROOKLYN, NY, 11235": {
+    "lat": 40.5885323,
+    "lng": -73.9370121
+  },
+  "P.O. BOX 4428, OCALA, FL, 34478": null,
+  "15 BERING WAY, SOMERSET, NJ, 08873": {
+    "lat": 40.4866067,
+    "lng": -74.5639325
+  },
+  "308 9TH STREET, JERSEY CITY, NJ": {
+    "lat": 40.728661,
+    "lng": -74.0473162
+  },
+  "1175 YORK AVENUE, NEW YORK, NY, 10065": {
+    "lat": 40.7615491,
+    "lng": -73.9578486
+  },
+  "84 ROGERS DR, NEW ROCHELLE, NY, 10804": {
+    "lat": 40.9720954,
+    "lng": -73.7868765
+  },
+  "78 CLAYBROOK RD, DOVER, MA, 02030": {
+    "lat": 42.2606373,
+    "lng": -71.2850106
+  },
+  "10288 JOHNS HOLLOW RD, VIENNA, VA, 22182": null,
+  "2 HENRY ST., WEST ORANGE, NJ, 07052": null,
+  "318 PROMENADE ESTATES LN, STAFFORD, TX, 77477": null,
+  "190A UNION ST, JERSEY CITY, NJ, 07304-5309": {
+    "lat": 40.7193882,
+    "lng": -74.0855203
+  },
+  "190A UNION STREET, JERSEY CITY, NJ, 07304-5309": {
+    "lat": 40.7146112,
+    "lng": -74.0768626
+  },
+  "88 PALISADE AVENUE, JERSEY CITY, NJ, 07305": {
+    "lat": 40.7322053,
+    "lng": -74.0518599
+  },
+  "608 SAN LUIS RD, BERKELEY, CA, 94707": {
+    "lat": 37.8995161,
+    "lng": -122.275397
+  },
+  "1032 CREAMERY RD., NEWTOWN, PA, 18940": {
+    "lat": 40.28337,
+    "lng": -74.931138
+  },
+  "5180 LOUISE AVE, ENCINO, CA, 91316": {
+    "lat": 34.1649177,
+    "lng": -118.5097133
+  },
+  "350 REVERE BEACH BOULEVARD APARTMENT 9-9T, REVERE, MA, 02151": null,
+  "2610 FILBERT ST., SAN FRANCISCO, CA, 94123": {
+    "lat": 37.7973534,
+    "lng": -122.4426632
+  },
+  "1522 CRYSTAL HILLS DRIVE, HOUSTON, TX, 77077": {
+    "lat": 29.7517638,
+    "lng": -95.5970179
+  },
+  "15 WOODCHUCK DR, SKILLMAN, NJ, 08558": null,
+  "66 FREEDOM AVE, STATEN ISLAND, NY, 10314": {
+    "lat": 40.5983552,
+    "lng": -74.1642705
+  },
+  "12 STADELMAN CT, KENDALL PARK, NJ, 08824": null,
+  "12 STADELMAN CT, KENDALL PK, NJ, 08824": null,
+  "441 CLEVELAND WAY, CORONA, CA, 92881": {
+    "lat": 33.8274792,
+    "lng": -117.5675205
+  },
+  "9 UNAMI COURT, SOMSERSET, NJ, 08873-4645": null,
+  "6 BROWN CIR, PARAMUS, NJ, 07652": {
+    "lat": 40.9225219,
+    "lng": -74.0503527
+  },
+  "1822 BLAKE ST., BERKELEY, CA, 94703": {
+    "lat": 37.8622447,
+    "lng": -122.2730596
+  },
+  "41 SKYVIEW TERRACE, CLIFTON, NJ, 07013": {
+    "lat": 40.8882275,
+    "lng": -74.1776176
+  },
+  "245 W 107TH ST, NEW YORK, NY 10027, MANHATTAN": {
+    "lat": 40.8021027,
+    "lng": -73.9673056
+  },
+  "2768 HARWAY AVENUE, BROOKLYN, NY, 11214": {
+    "lat": 40.5887743,
+    "lng": -73.9863555
+  },
+  "1045 HAYES ST, SAN FRANCISCO, CA, 94117": {
+    "lat": 37.7753133,
+    "lng": -122.4335566
+  },
+  "43 GRAND COVE WAY, EDGEWATER, NJ, 07020": {
+    "lat": 40.8244584,
+    "lng": -73.9742368
+  },
+  "41 WOODBINE AVE, NEWARK, NJ, 07106": {
+    "lat": 40.7405882,
+    "lng": -74.2415228
+  },
+  "1010 RAHWAY RD, PLAINFIELD, NJ, 07060": {
+    "lat": 40.6108122,
+    "lng": -74.3854382
+  },
+  "10 ALAN DRIVE, SHORT HILLS, NJ, 07078-2103": {
+    "lat": 40.7377713,
+    "lng": -74.3123526
+  },
+  "2918 WYCLIFF ROAD, RALEIGH, NC, 27607": {
+    "lat": 35.8223916,
+    "lng": -78.6902003
+  },
+  "1624 VOORHIES AVE, BROOKLYN, NY, 11235": {
+    "lat": 40.585815,
+    "lng": -73.9520833
+  },
+  "2620 VOORHIES AVE, BROOKLYN, NY, 11235": {
+    "lat": 40.5868314,
+    "lng": -73.9424208
+  },
+  "2444 ALVARADO, SANTA CLARA, CA, 95051": {
+    "lat": 37.3661089,
+    "lng": -121.9672279
+  },
+  "2444 ALVARADO, SANTA CLARA, CA, 95051-1305": {
+    "lat": 37.3661089,
+    "lng": -121.9672279
+  },
+  "2444 ALVARADO STREET, SANTA CLARA, CA, 95051": null,
+  "1903 KIMBERLY CT, SEWICKLEY, PA, 15143": null,
+  "750 CLEVELAND AVE, HARRISON, NJ, 07029": {
+    "lat": 40.7483021,
+    "lng": -74.1495354
+  },
+  "1384 MOSS CREEK DR, JACKSONVILLE, FL, 32225": {
+    "lat": 30.3525014,
+    "lng": -81.4466458
+  },
+  "777 PRESTON STREET 37I, HOUSTON, TX, 77002": null,
+  "3545 W 153 TER, OVERLAND PARK, KS, 66224": null,
+  "30 LINCOLN AVE, CLIFTON, NJ, 07011": {
+    "lat": 40.8765023,
+    "lng": -74.1476657
+  },
+  "161 CASCADE FALLS DR, FOLSOM, CA, 95630": {
+    "lat": 38.7024372,
+    "lng": -121.1875969
+  },
+  "36W795 E RIDGEWOOD DR, SOUTH ELGIN, IL, 60175": null,
+  "166 GOLF CT, TEANECK, NJ, 07666": {
+    "lat": 40.8830724,
+    "lng": -74.0013292
+  },
+  "36W795 E RIDGEWOOD DR, SAINT CHARLES, IL, 60175": null,
+  "1961 MCCLEAN DRIVE, SANTA ANA, CA, 92705": null,
+  "18 HUNTINGTON TERRACE, TOTOWA, NJ, 07512": {
+    "lat": 40.9192028,
+    "lng": -74.2073347
+  },
+  "141 SUNRISE PL, VESTAL, NY, 13850": {
+    "lat": 42.0871445,
+    "lng": -75.9899458
+  },
+  "100 GRANDVIEW TERRACE, STATEN ISLAND, NY, 10308": {
+    "lat": 40.5456744,
+    "lng": -74.1485318
+  },
+  "100 GRANDVIEW TER, STATEN ISLAND, NY, 10308-2814": {
+    "lat": 40.5456744,
+    "lng": -74.1485318
+  },
+  "2 KEVIN DR, SEWICKLEY, PA, 15143": {
+    "lat": 40.558624,
+    "lng": -80.122561
+  },
+  "206-16 WEST SHEARWATER COURT, JERSEY CITY, NJ, 07305": {
+    "lat": 40.6872378,
+    "lng": -74.0729824
+  },
+  "98 BROWN CIR, PARAMUS, NJ, 07652": {
+    "lat": 40.9193555,
+    "lng": -74.0515886
+  },
+  "17 BROWN CIR, PARAMUS, NJ, 07625": {
+    "lat": 40.9224623,
+    "lng": -74.0503761
+  },
+  "206-16 W SHEARWATER CT, JERSEY CITY, NJ, 07305": {
+    "lat": 40.6872378,
+    "lng": -74.0729824
+  },
+  "10 KAPPELMANN DR, GREENBROOK, NJ, 08812": null,
+  "6 PARTRIDGE RUN, PRINCETON JUNCTION, NJ, 08550": null,
+  "98 BROWN CIR., PARAMUS, NJ, 07652": {
+    "lat": 40.9193555,
+    "lng": -74.0515886
+  },
+  "3320 LOWSON BLVD, DELRAY BEACH, FL, 33445": {
+    "lat": 26.4458863,
+    "lng": -80.111564
+  },
+  "3320 LOWSON BLVD, DELRAY BEACH, FL, 33445-5639": {
+    "lat": 26.4458863,
+    "lng": -80.111564
+  },
+  "82 W RUBY AVE, PALISADES PARK, NJ, 07650": {
+    "lat": 40.8448462,
+    "lng": -74.0036648
+  },
+  "56 VILLAGEWOOD DRIVE, BURLINGTON, MA, 01803": {
+    "lat": 42.4979826,
+    "lng": -71.1885336
+  },
+  "56 VILLAGEWOOD DR, BURLINGTON, MA, 01803": {
+    "lat": 42.4979826,
+    "lng": -71.1885336
+  },
+  "73 MOUNTAIN AVE, WEST ORANGE, NJ, 07052": {
+    "lat": 40.7992343,
+    "lng": -74.2392808
+  },
+  "109 OLD HOMESTEAD ROAD, WAYNE, NJ, 07470": {
+    "lat": 40.9570618,
+    "lng": -74.2493558
+  },
+  "335 COOPER PL, PARAMUS, NJ, 07652": {
+    "lat": 40.9445385,
+    "lng": -74.0448167
+  },
+  "611 BELGROVE DR, KEARNY, NJ, 07032": {
+    "lat": 40.771633,
+    "lng": -74.1485533
+  },
+  "3156 PERRY AVENUE, BRONX, NY, 10467-4143": {
+    "lat": 40.8737252,
+    "lng": -73.8778044
+  },
+  "13219 NE 36TH ST, BELLEVUE, WA, 98005": {
+    "lat": 47.6422845,
+    "lng": -122.1637846
+  },
+  "35 W 50TH STREET, BAYONNE, NJ, 07002": {
+    "lat": 40.6835418,
+    "lng": -74.1036971
+  },
+  "15 PROSPECT LANE, COLONIA, NJ, 07067": null,
+  "1130 S MICHIGAN AVENUE, CHICAGO, IL, 60605": {
+    "lat": 41.8685236,
+    "lng": -87.624603
+  },
+  "331 NEWARK AVE., JERSEY CITY, NJ, 07302": {
+    "lat": 40.7248404,
+    "lng": -74.0513623
+  },
+  "505 HARLAND STREET, MILTON, MA, 02186": {
+    "lat": 42.2305489,
+    "lng": -71.0824974
+  },
+  "254 CLINTON AVE, CLIFTON, NJ, 07011": {
+    "lat": 40.8705742,
+    "lng": -74.1485733
+  },
+  "2125 1ST AVENUE, SEATTLE, WA, 98121": {
+    "lat": 47.6123149,
+    "lng": -122.3450023
+  },
+  "64 CAMEO DRIVE, CHERRY HILL, NJ, 08003": {
+    "lat": 39.8946421,
+    "lng": -74.9720877
+  },
+  "250 BUTTONWOOD DR, PARAMUS, NJ, 07652": {
+    "lat": 40.9381399,
+    "lng": -74.0667893
+  },
+  "250 BUTTONWOOD DRIVE, PARAMUS, NJ, 07652": {
+    "lat": 40.9381399,
+    "lng": -74.0667893
+  },
+  "15 HIGHWOOD PL, ALPINE, NJ, 07620": {
+    "lat": 40.9412736,
+    "lng": -73.9300568
+  },
+  "5144 WILLOW BEND, SACHSE, TX, 75048": {
+    "lat": 32.9681686,
+    "lng": -96.5766712
+  },
+  "7 KIMBERLY WAY, RIVER EDGE, NJ, 07661": {
+    "lat": 40.9357644,
+    "lng": -74.0450638
+  },
+  "7908 COMANCHE WAY, MCKINNEY, TX, 75070": {
+    "lat": 33.1461399,
+    "lng": -96.718378
+  },
+  "4812 APPLERIDGE DRIVE, RICHARDSON, TX, 75082": {
+    "lat": 32.9864633,
+    "lng": -96.6315672
+  },
+  "161 BUCKTHORN DRIVE, BADEN, PA, 15005": null,
+  "161 BUCKTHORN DR, BADEN, PA, 15005": null,
+  "101 ROXY AVENUE, EDISON, NJ, 08820": {
+    "lat": 40.585683,
+    "lng": -74.348267
+  },
+  "14936 INDIGO LAKE DRIVE, ORLANDO, FL, 32824": null,
+  "7 GROVE AVENUE, ROCHELLE PARK, NJ, 07662": {
+    "lat": 40.8976172,
+    "lng": -74.0757418
+  },
+  "338 NORTH DELAWARE AVE, MASSAPEQUA, NY, 11758": {
+    "lat": 40.710207,
+    "lng": -73.4726502
+  },
+  "1100 BELLEVUE WAY NE, BELLEVUE, WA, 98004": {
+    "lat": 47.620416,
+    "lng": -122.201437
+  },
+  "PO BOX 280, OWNINGS MILLS, MD, 21117": null,
+  "273 ASH STREET, ENGLEWOOD CLIFFS, NJ, 07632": {
+    "lat": 40.8728237,
+    "lng": -73.9585589
+  },
+  "15 WEARIMUS ROAD, HOHOKUS, NJ, 07423": null,
+  "16370 MATILIJA DRIVE, LOS GATOS, CA, 95030": null,
+  "3176 SACRAMENTO STREET, SAN FRANCISCO, CA 94115, SAN FRANCISCO": {
+    "lat": 37.7885017,
+    "lng": -122.44515
+  },
+  "13831 BATHGATE DRIVE, STERLING HEIGHTS, MI, 48312": {
+    "lat": 42.554793,
+    "lng": -82.9887007
+  },
+  "330 MERCER LOOP, JERSEY CITY, NJ, 07302": {
+    "lat": 40.722587,
+    "lng": -74.0571585
+  },
+  "8 GLOUCESTER ST APT 9, BOSTON, MA, 02115": null,
+  "2295 AVALON STREET, BEAUMONT, TX, 77707": {
+    "lat": 30.0536549,
+    "lng": -94.1872245
+  },
+  "9464 CEDARVIEW WAY, ELK GROVE, CA, 95758": {
+    "lat": 38.4163157,
+    "lng": -121.4633611
+  },
+  "1145 MAIN ST, CLIFTON, NJ, 07011": null,
+  "135 LAIDLAW AVE, JERSEY CITY, NJ, 07306": {
+    "lat": 40.7382612,
+    "lng": -74.0557175
+  },
+  "4 HORSESHOE COURT, MONROE TOWNSHIP, NJ, 08831": {
+    "lat": 40.2737121,
+    "lng": -74.4599003
+  },
+  "123 NOE AVENUE, CHATHAM, NJ, 07929": {
+    "lat": 40.7391189,
+    "lng": -74.411785
+  },
+  "123 NOE AVE, CHATHAM, NJ, 07929": {
+    "lat": 40.7391189,
+    "lng": -74.411785
+  },
+  "123 NOE AVE, CHATHAM, NJ, 07928": {
+    "lat": 40.7391189,
+    "lng": -74.411785
+  },
+  "30319 TRISTANIA CT, WESLEY CHAPEL, FL, 33543": null,
+  "209 CHURCH LN, WAYNE, NJ, 07470": {
+    "lat": 40.9559006,
+    "lng": -74.2338346
+  },
+  "12 PRINCETON TERRACE, OAKLAND, NJ, 07436": {
+    "lat": 41.029697,
+    "lng": -74.225227
+  },
+  "10511 WYNFIELD WOODS DR., GREAT FALLS, VA, 22066": {
+    "lat": 38.9902304,
+    "lng": -77.3098959
+  },
+  "1280 WOODMONT LANE, CATASAUQUA, PA, 18032": {
+    "lat": 40.6674165,
+    "lng": -75.4703283
+  },
+  "572 PROSPECT ST, MAPLEWOOD, NJ, 07040": {
+    "lat": 40.730546,
+    "lng": -74.265816
+  },
+  "8 CRANBURY HILL COURT, MOUNT LAUREL, NJ, 08054": {
+    "lat": 39.92718,
+    "lng": -74.8960436
+  },
+  "705 76TH STREET, NORTH BERGEN, NJ, 07047": {
+    "lat": 40.800829,
+    "lng": -74.009834
+  },
+  "8426 LIBERTY AVE, NORTH BERGEN, NJ, 07047": {
+    "lat": 40.8096643,
+    "lng": -74.0131701
+  },
+  "1007 HOOVER DR, NORTH BRUNSWICK TOWNSHIP, NJ, 08902": {
+    "lat": 40.4560071,
+    "lng": -74.4529063
+  },
+  "665 SOLDIER HILL RD, ORADELL, NJ, 07649": {
+    "lat": 40.9606577,
+    "lng": -74.0327458
+  },
+  "13314 WIMBERLEY DR, ALLEN, TX, 75013": null,
+  "170-09 84TH RD, QUEENS, NY, 11432": {
+    "lat": 40.7161624,
+    "lng": -73.794278
+  },
+  "219 ACADEMY ST, JERSEY CITY, NJ, 07306": {
+    "lat": 40.7278417,
+    "lng": -74.0640227
+  },
+  "344 SIP AVENUE, JERSEY CITY, NJ, 07306-6525": {
+    "lat": 40.7334157,
+    "lng": -74.0764565
+  },
+  "18 DEHART COURT, WAYNE, NJ, 07470": {
+    "lat": 40.9333085,
+    "lng": -74.2715953
+  },
+  "1908 FRANKLIN PL, CORAOPOLIS, PA, 15108": null,
+  "50 CALVERT AVE. W, EDISON, NJ, 08820": {
+    "lat": 40.5638656,
+    "lng": -74.365723
+  },
+  "155 SOUTH STREET, JERSEY CITY, NJ, 07307": {
+    "lat": 40.7498517,
+    "lng": -74.049212
+  },
+  "368 SIP AVE, 2 FL, JERSEY CITY, NJ": null,
+  "640 OXFORD BLVD, PITTSBURGH, PA, 15243": {
+    "lat": 40.3671415,
+    "lng": -80.0751203
+  },
+  "7 HUGUENOT DR, LARCHMONT, NY, 10538": {
+    "lat": 40.9347998,
+    "lng": -73.7668425
+  },
+  "8 JOSEPH CT, MONMOUTH JUNCTION, NJ, 08852": null,
+  "4371 RAFAEL ST, IRVINE, CA, 92604": {
+    "lat": 33.6982944,
+    "lng": -117.7855552
+  },
+  "28 FERNALD DR APT. 32, CAMBRIDGE, MA, 02138": null,
+  "4 CARRIE DR, HOWELL, NJ, 07731": {
+    "lat": 40.1316915,
+    "lng": -74.1498584
+  },
+  "4050 LEIGHTON LANE, FRISCO, TX, 75034": {
+    "lat": 33.112747,
+    "lng": -96.8608092
+  },
+  "16 POINT OF WOODS DRIVE, MONMOUTH JUNCTION, NJ, 08852": null,
+  "44 WOODMERE RD, NORTH BRUNSWICK TOWNSHIP, NJ, 08902": {
+    "lat": 40.4454465,
+    "lng": -74.5216224
+  },
+  "2845 W 139TH TER, LEAWOOD, KS, 66224": {
+    "lat": 38.8761423,
+    "lng": -94.6199444
+  },
+  "790 11TH AVENUE APT 7B, NEW YORK, NY, 10019": null,
+  "26181 SHADOW ROCK LN, STEVENSON RANCH, CA, 91381": null,
+  "1015 STONE GATE CT, MORGAN HILL, CA, 95037": {
+    "lat": 37.098808,
+    "lng": -121.6499692
+  },
+  "1387 ROYAL CREEK CT, PLEASANTON, CA, 94566": {
+    "lat": 37.6493357,
+    "lng": -121.8965963
+  },
+  "368 SIP AVENUE, JERSEY CITY, NJ, 07306": {
+    "lat": 40.7336792,
+    "lng": -74.0775632
+  },
+  "9 COUNTRY CLUB DRIVE, CHATHAM, NJ, 07928-1601": {
+    "lat": 40.7345751,
+    "lng": -74.4173606
+  },
+  "984 CONEY ISLAND AVE, BROOKLYN, NY, 11230": {
+    "lat": 40.6334142,
+    "lng": -73.9674188
+  },
+  "724 PASCACK RD, PARAMUS, NJ, 07652": {
+    "lat": 40.968109,
+    "lng": -74.060809
+  },
+  "171 COLUMBUS AVENUE, NEW YORK, NY, 10023": {
+    "lat": 40.7745339,
+    "lng": -73.9806616
+  },
+  "171 COLUMBUS AVE, NEW YORK, NY, 10023": {
+    "lat": 40.7745339,
+    "lng": -73.9806616
+  },
+  "1321 VELOCE DR, PLANO, TX, 75074": {
+    "lat": 33.0103631,
+    "lng": -96.6453808
+  },
+  "611 PINEHAVEN DR, HOUSTON, TX, 77024": {
+    "lat": 29.777618,
+    "lng": -95.4607343
+  },
+  "344 W GRAND ST, ELIZABETH, NJ, 07202": {
+    "lat": 40.6649229,
+    "lng": -74.2280831
+  },
+  "2501 PORTER ST, WASHINGTON, DC, 20008": {
+    "lat": 38.9353581,
+    "lng": -77.0546092
+  },
+  "505 W 37TH ST APT 2004, MANHATTAN, NY, 10018": null,
+  "7 FIR ST, JERSEY CITY, NJ, 07305": {
+    "lat": 40.707898,
+    "lng": -74.104398
+  },
+  "10 BEEKMAN RD, FRANKLIN PARK, NJ, 08823": null,
+  "103 IRVING STREET, CAMBRIDGE, MA, 02138": {
+    "lat": 42.3786541,
+    "lng": -71.1112533
+  },
+  "336 PENN WAY, LOS GATOS, CA, 95032": {
+    "lat": 37.2487846,
+    "lng": -121.9525732
+  },
+  "3245 N STREET NW, WASHINGTON, DC, 20007": {
+    "lat": 38.90701,
+    "lng": -77.0647982
+  },
+  "3245 N STREET NW, WASHINGTON, DC 20007, WASHINGTON": {
+    "lat": 38.90701,
+    "lng": -77.0647982
+  },
+  "668 OLD HOLLOW RD, NORTH FERRISBURGH, VT, 05473-6009": {
+    "lat": 44.2591796,
+    "lng": -73.2148058
+  },
+  "13001 CHADDSFORD TER, MANASSAS, VA, 20112": null,
+  "529-531 CLIFTON AVENUE, NEWARK, NJ, 07104": {
+    "lat": 40.77069,
+    "lng": -74.1696471
+  },
+  "475 WASHINGTON BOUEVARD, NEW JERSEY, NJ, 07310": null,
+  "25 COLUMBUS DRIVE, JERSEY CITY, NJ, 07302": {
+    "lat": 40.7184854,
+    "lng": -74.0394058
+  },
+  "777 MCCARTER HWY 2306, NEWARK, NJ, 07102": null,
+  "135 WILLET STREET, PASSAIC, NJ, 07055": {
+    "lat": 40.8537864,
+    "lng": -74.1442246
+  },
+  "1 IRVING PLACE, MANHATTAN, NY, 10003": {
+    "lat": 40.7348034,
+    "lng": -73.9889497
+  },
+  "1 IRVING PLACE, APT P24B, NY, NY": null,
+  "718 MIDWEST CLUB PKWY, OAK BROOK, IL, 60523": {
+    "lat": 41.8285351,
+    "lng": -87.9885497
+  },
+  "1908 FRANKLIN PL, MOON TOWNSHIP, PA, 15108-3531": {
+    "lat": 40.4940536,
+    "lng": -80.1611661
+  },
+  "245 EDELWEISS DR, WEXFORD, PA, 15090": {
+    "lat": 40.6137313,
+    "lng": -80.0468978
+  },
+  "7 MARIE CT, WAPPINGERS FALLS, NY, 12590": {
+    "lat": 41.6138026,
+    "lng": -73.8033424
+  },
+  "100 SHEPHERDS LANE, APT 117, TOTOWA, NJ": null,
+  "3303 M ST, MERCED, CA, 95348": {
+    "lat": 37.3231492,
+    "lng": -120.4788461
+  },
+  "4 KRISTEN CT,, SOMERSET COUNTY, NJ, 08873": {
+    "lat": 40.4846294,
+    "lng": -74.5265047
+  },
+  "25 S WHITE HORSE PIKE, STRATFORD, NJ, 08084": {
+    "lat": 39.8335285,
+    "lng": -75.0054032
+  },
+  "411 GROVE ST, PLAINFIELD, NJ, 07060": {
+    "lat": 40.6245745,
+    "lng": -74.4393368
+  },
+  "60 TIMBERHILL DR, FRANKLIN PARK, NJ, 08823": null,
+  "83 EAST HARTWICK DRIVE, SKILLMAN, NJ, 08558": null,
+  "20 PRESCOTT STREET, CAMBRIDGE, MA, 02138": {
+    "lat": 42.37355,
+    "lng": -71.1133567
+  },
+  "18 BLUE MARLIN WAY, MECHANICSBURG, PA, 17050": null,
+  "100 AVENUE C, BAYONNE, NJ, 07002": {
+    "lat": 40.6492498,
+    "lng": -74.1302573
+  },
+  "100 AVE. C, BAYONNE, NJ, 07002": {
+    "lat": 40.6492498,
+    "lng": -74.1302573
+  },
+  "235 CONWAY ST, EDISON, NJ, 08820": {
+    "lat": 40.5954508,
+    "lng": -74.3427613
+  },
+  "21810 CANTON PASS LN, KATY, TX, 77450": null,
+  "320 WELLESLEY ST, WESTON, MA, 02493": {
+    "lat": 42.3448432,
+    "lng": -71.3045692
+  },
+  "320 WELLESLEY STREET, WESTON, MA, 02493": {
+    "lat": 42.3448432,
+    "lng": -71.3045692
+  },
+  "21112 CARDINAL POND TER APT 125, ASHBURN, VA, 20147": null,
+  "P.O. BOX 927, BELMAR, NJ, 07719": null,
+  "377 S HARRISON ST, 9J, EAST ORANGE, NJ": null,
+  "11 TARA WAY, PENNINGTON, NJ, 08534": null,
+  "15 OAK HOLLOW ROAD, BRANFORD, CT, 06405": null,
+  "626 SAINT ANDREWS PLACE, MANALAPAN, NJ, 07726": {
+    "lat": 40.2645983,
+    "lng": -74.3790982
+  },
+  "27 STONEBRIAR WAY, FRISCO, TX, 75034": {
+    "lat": 33.093821,
+    "lng": -96.8374129
+  },
+  "5 GATESHEAD DR, BRIDGEWATER, NJ, 08807": {
+    "lat": 40.6146172,
+    "lng": -74.6070293
+  },
+  "75 FRESH POND PARKWAY, CAMBRIDGE, MA, 02138": {
+    "lat": 42.3784383,
+    "lng": -71.1435858
+  },
+  "155 PARLIN LANE, WATCHUNG, NJ, 07069": {
+    "lat": 40.655966,
+    "lng": -74.4413438
+  },
+  "60 NOTTINGHAM DRIVE, WATCHUNG, NJ, 07069": {
+    "lat": 40.6453958,
+    "lng": -74.4297327
+  },
+  "10 RAMBLEWOOD DR, ROCKY HILL, CT, 06067": {
+    "lat": 41.6681279,
+    "lng": -72.7033467
+  },
+  "19 STRATFORD CROSSING, AVON, CT, 06001": {
+    "lat": 41.7759399,
+    "lng": -72.875667
+  },
+  "24757 GRAND HARBOR DRIVE, KATY, TX, 77494": null,
+  "500 MELLON ST, MELLON ST, PA, 15206": {
+    "lat": 40.5399408,
+    "lng": -79.7854374
+  },
+  "2787 JF KENNEDY BOULEVARD, JERSEY CITY, NJ, 07306": null,
+  "910 WINDMERE CT, DARIEN, IL, 60561": {
+    "lat": 41.7674775,
+    "lng": -87.9679608
+  },
+  "3305 MOSSWOOD DR, PLANO, TX, 75074": {
+    "lat": 33.0624588,
+    "lng": -96.66586
+  },
+  "28 KEILLER CT, HALEDON, NJ, 07508": {
+    "lat": 40.9699839,
+    "lng": -74.1814828
+  },
+  "8 CATANIA STREET, ORANGE COUNTY, CA, 92657": null,
+  "20888 PLANETREE FOREST CT, POTOMAC FALLS, VA, 20165": null,
+  "10412 BURNT EMBER DR, SILVER SPRING, MD, 20903": {
+    "lat": 39.025794,
+    "lng": -76.9945836
+  },
+  "67 WADE STREET, JERSEY CITY, NJ, 07305-2905": {
+    "lat": 40.700306,
+    "lng": -74.088074
+  },
+  "851 SOMERSET DR, WINSTON-SALEM, NC, 27103": {
+    "lat": 36.0491481,
+    "lng": -80.3362201
+  },
+  "1314 ROSEMEADOW CT, HOUSTON, TX, 77094": null,
+  "3317 HARBOUR PLACE, PANAMA CITY, FL, 32405": {
+    "lat": 30.206546,
+    "lng": -85.7038429
+  },
+  "432 W 26TH STREET, HOUSTON, TX, 77008": {
+    "lat": 29.8099154,
+    "lng": -95.4043086
+  },
+  "1362 FRANCIE WAY, ALLEN, TX, 75013": {
+    "lat": 33.0930987,
+    "lng": -96.7048633
+  },
+  "45 ARLINGTON AVE APT. A, SOMERSET COUNTY, NJ, 08873": null,
+  "45 ARLINGTON AVENUE, SOMERSET COUNTY, NJ, 08873": {
+    "lat": 40.5056811,
+    "lng": -74.4732417
+  },
+  "1246 RESTON AVE, HERNDON, VA, 20170": null,
+  "27 VISTA TRL, WAYNE, NJ, 07470": {
+    "lat": 40.9845511,
+    "lng": -74.2691553
+  },
+  "70 CONGRESS ST, JERSEY CITY, NJ, 07307": {
+    "lat": 40.749889,
+    "lng": -74.043282
+  },
+  "288 DOUGLAS ROAD, STATEN ISLAND, NY, 10304": {
+    "lat": 40.6089928,
+    "lng": -74.0939539
+  },
+  "2013 COLONIAL CT, RICHARDSON, TX, 75082": {
+    "lat": 32.9905045,
+    "lng": -96.6842817
+  },
+  "6811 NW 117TH AVE, PARKLAND, FL, 33076": {
+    "lat": 26.3147095,
+    "lng": -80.2830358
+  },
+  "129 HAVEN CIR., PLEASANT HILL, CA, 94523": {
+    "lat": 37.9607583,
+    "lng": -122.0741813
+  },
+  "4 AUTUM TERRACE, HOMDEL, NJ, 07733": null,
+  "345 MERCER LOOP, JERSEY CITY, NJ, 07302-3234": {
+    "lat": 40.7223914,
+    "lng": -74.0585563
+  },
+  "92 EL GAVILAN, ORINDA, CA, 94563": {
+    "lat": 37.9014606,
+    "lng": -122.1726791
+  },
+  "2 RIO VISTA DRIVE, EDISON, NJ, 08820": {
+    "lat": 40.580494,
+    "lng": -74.340915
+  },
+  "225 MAY STREET, EDISON, NJ, 08837": {
+    "lat": 40.5274691,
+    "lng": -74.3273222
+  },
+  "5 BEALE ST, DORCHESTER CENTER, MA, 02124": null,
+  "5 BEALE STREET, DORCHESTER, MA, 02124": {
+    "lat": 42.2829005,
+    "lng": -71.0646526
+  },
+  "12450 S POST RD, PALOS PARK, IL, 60464": null,
+  "407 TULIP AVE APT 103, TAKOMA PARK, MD, 20912": null,
+  "5414 TALON COURT, CLARKSVILLE, MD, 21029": {
+    "lat": 39.2220444,
+    "lng": -76.9711482
+  },
+  "3133 BARKLEY DR, FAIRFAX, VA, 22031": {
+    "lat": 38.863334,
+    "lng": -77.2518304
+  },
+  "19 LOCKWOOD PL, CLIFTON, NJ, 07012": {
+    "lat": 40.8487202,
+    "lng": -74.1700212
+  },
+  "3813 FRANKLIN MEADOWS DRIVE, MATTHEWS, NC, 28105": {
+    "lat": 35.0704718,
+    "lng": -80.727301
+  },
+  "6 SHERMAN STREET, BROOKLYN, NY, 11215": {
+    "lat": 40.6577645,
+    "lng": -73.9788725
+  },
+  "322 CROSS ST, WESTBURY, NY, 11590": {
+    "lat": 40.7587343,
+    "lng": -73.5871605
+  },
+  "5 GRAMERCY RD, SOUTH BRUNSWICK TOWNSHIP, NJ, 08852": null,
+  "17 CORRIGAN WAY, OLD TAPPAN, NJ, 76757": {
+    "lat": 41.033966,
+    "lng": -73.986315
+  },
+  "314 BLAKE CIR, HAMDEN, CT, 06517": {
+    "lat": 41.3405344,
+    "lng": -72.9248176
+  },
+  "9605 STRATMORE CIRCLE, SHREVEPORT, LA, 71115": {
+    "lat": 32.4170826,
+    "lng": -93.6976208
+  },
+  "15260 VENTURA BLVD 1040, LOS ANGELES, CA, 91403": null,
+  "45 RIVER DR S 3104, JERSEY CITY, NJ, 07310": null,
+  "45 RIVER DRIVE SOUTH, JERSEY CITY, NJ, 07310": {
+    "lat": 40.728381,
+    "lng": -74.032041
+  },
+  "1730 STEVENSAN DRIVE, SEWICKLEY, PA, 15143": null,
+  "6 PARKLANE BLVD SUITE 695, DEARBORN, MI, 48126": null,
+  "796 14TH AVE, PATERSON, NJ, 07504": {
+    "lat": 40.9157477,
+    "lng": -74.1412475
+  },
+  "151 DERROM AVE, PATERSON, NJ, 07504": {
+    "lat": 40.9173247,
+    "lng": -74.1394517
+  },
+  "29 SHAMROCK HILLS DRIVE, WAPPINGERS FALLS, NY, 12590": {
+    "lat": 41.5755262,
+    "lng": -73.875589
+  },
+  "183 DONNA AVE, MORGANTOWN, WV, 26505": null,
+  "1122 QUINN DRIVE, WAUNAKEE, WI, 53597": {
+    "lat": 43.1789138,
+    "lng": -89.430714
+  },
+  "56 MARGARET DRIVE, SOMERSET, NJ, 08873": {
+    "lat": 40.4921831,
+    "lng": -74.5282472
+  },
+  "9 MAPLE ST, ENGLEWOOD CLIFFS, NJ, 07632": {
+    "lat": 40.8894141,
+    "lng": -73.9532536
+  },
+  "388 SANTANA ROW 1409, SAN JOSE, CA, 95128": {
+    "lat": 37.3201602,
+    "lng": -121.9470149
+  },
+  "2700 ALMAMZOR AVE, IRVING, TX, 75062": null,
+  "30 PARADISE LN, PLEASANT HILL, CA, 94523": {
+    "lat": 37.9339873,
+    "lng": -122.0840748
+  },
+  "11 CLINTON CT, HOLMDEL, NJ, 07733-1039": {
+    "lat": 40.4174154,
+    "lng": -74.1565474
+  },
+  "10437 CHANTRY LANE, FRISCO, TX, 75035": {
+    "lat": 33.1749202,
+    "lng": -96.7893841
+  },
+  "2301 COLUMBIA PIKE, APT 601, ARLINGTON, VA": null,
+  "11 CONDOR COURT, MONMOUTH JUNCTION, NJ, 08852": null,
+  "100 PIERSON MILLER DR E31, POMPTON LAKES, NJ, 07442": null,
+  "1170 DONAMY GLEN, SCOTCH PLAINS, NJ, 07076": {
+    "lat": 40.6146547,
+    "lng": -74.3819216
+  },
+  "5355 HENRY HUDSON PKWY W, BRONX, NY, 10471": {
+    "lat": 40.9011113,
+    "lng": -73.9067341
+  },
+  "627 ALBERTA DRIVE, PARAMUS, NJ, 07652": {
+    "lat": 40.960179,
+    "lng": -74.0567697
+  },
+  "240 N 8TH ST, PROSPECT PARK, NJ, 07508": {
+    "lat": 40.9321903,
+    "lng": -74.1737127
+  },
+  "2987 DISTRICT AVENUE #13, FAIRFAX, VA, 22031": null,
+  "30 GRAND MERIDIEN CT, CHESTERFIELD, MO, 63005-4973": null,
+  "214 LACKAWANNA AVE, WOODLAND PARK, NJ, 07424": {
+    "lat": 40.8885755,
+    "lng": -74.2098858
+  },
+  "548 PRIZER CT, DOWNINGTOWN, PA, 19335": null,
+  "125 DOUGLAS ROAD, STATEN ISLAND, NY, 10304": {
+    "lat": 40.6080149,
+    "lng": -74.0954083
+  },
+  "820 ACALANES RD, LAFAYETTE, CA, 94549": {
+    "lat": 37.8828207,
+    "lng": -122.1582394
+  },
+  "4810 LEXINGTON CT, CENTER VALLEY, PA, 18034": {
+    "lat": 40.5463984,
+    "lng": -75.4080749
+  },
+  "230 EAST 71ST STREET, NEW YORK, NY, 10021": {
+    "lat": 40.7682206,
+    "lng": -73.9596525
+  },
+  "225 WHITCLEM DR., PALO ALTO, CA, 94306": {
+    "lat": 37.412214,
+    "lng": -122.1162026
+  },
+  "90 PLYMOUTH AVENUE, MAPLEWOOD, NJ, 07040": {
+    "lat": 40.7264552,
+    "lng": -74.2620733
+  },
+  "98 BURNETT AVENUE, MAPLEWOOD, NJ, 07040": {
+    "lat": 40.7195399,
+    "lng": -74.2607389
+  },
+  "50 CROWS NEST ROAD, TUXEDO PARK, NY, 10987": {
+    "lat": 41.1855045,
+    "lng": -74.2140041
+  },
+  "116 FELLSWOOD DR, MOORESTOWN, NJ, 08057": {
+    "lat": 39.9884783,
+    "lng": -74.949352
+  },
+  "830 6TH AVENUE, MANHATTAN, NY, 10001": {
+    "lat": 40.74643,
+    "lng": -73.9901098
+  },
+  "17 STREK DRIVE, PARLIN, NJ, 08859": null,
+  "94 JACKSON DRIVE, CRESSKILL, NJ, 07626": {
+    "lat": 40.937513,
+    "lng": -73.9375982
+  },
+  "1 OLSEN CT, KENDALL PARK, NJ, 08824": null,
+  "1706 KENYON ST NW, WASHINGTON, DC, 20010": {
+    "lat": 38.9295025,
+    "lng": -77.0392954
+  },
+  "914 RAMBLING DR., ROCHESTER HILLS, MI, 48307": {
+    "lat": 42.6679241,
+    "lng": -83.1212144
+  },
+  "1520 BRAY LN, WASHINGTON CROSSING, PA, 18977": null,
+  "1666 KENSINGTON AVE, LOS ALTOS, CA, 94024": {
+    "lat": 37.3506771,
+    "lng": -122.0826626
+  },
+  "937 PAVONIA AVENUE, JERSEY CITY, NJ, 07306": {
+    "lat": 40.734467,
+    "lng": -74.071959
+  },
+  "20 BEEKMAN ROAD, FRANKLIN PARK, NJ, 08823": null,
+  "421 HUDSON ST, APT. 309, NEW YORK, NY": null,
+  "235 CONWAY STREET, EDISON, NJ, 08820": {
+    "lat": 40.5954508,
+    "lng": -74.3427613
+  },
+  "22 FAIRVIEW AVE, STATEN ISLAND, NY, 10314": {
+    "lat": 40.6189189,
+    "lng": -74.1198538
+  },
+  "27 SHEPARD, IRVINE, CA, 92620": {
+    "lat": 33.7028344,
+    "lng": -117.7519195
+  },
+  "353 EAST 19 STREET #2, NEW YORK, NY, 10003": null,
+  "895 BERGEN AVENUE, JERSEY CITY, NJ, 07306": {
+    "lat": 40.7298785,
+    "lng": -74.0656265
+  },
+  "4219 LEMON GROVE LANE, FAIR OAKS, CA, 95628": {
+    "lat": 38.6421679,
+    "lng": -121.2817312
+  },
+  "34 W 34TH ST, BAYONNE, NJ, 07002": {
+    "lat": 40.6737766,
+    "lng": -74.1119255
+  },
+  "28 WOODFIELD COURT, PRINCETON, NJ, 08540": {
+    "lat": 40.4279219,
+    "lng": -74.5758318
+  },
+  "65 PURINTON ST, SHREWSBURY, MA, 01545": {
+    "lat": 42.2484423,
+    "lng": -71.7192589
+  },
+  "26 LILAC LN, PRINCETON, NJ, 08540": {
+    "lat": 40.3511257,
+    "lng": -74.6699564
+  },
+  "6005 STRATFORD CT, PITTSBURGH, PA, 15237": null,
+  "1857 NORTH GATE ROAD, SCOTCH PLAINS, NJ, 07076": {
+    "lat": 40.623649,
+    "lng": -74.3560518
+  },
+  "330 W SADDLE RIVER RD, SADDLE RIVER, NJ, 07458": {
+    "lat": 41.0560788,
+    "lng": -74.0990921
+  },
+  "7706 W.145 TER., OVERLAND PARK, KS, 66223": null,
+  "19 SILVERS LN N, CRANBURY, NJ, 08512": {
+    "lat": 40.321914,
+    "lng": -74.5095384
+  },
+  "138 BRIARCLIFF DR, MORGANVILLE, NJ, 07751": null,
+  "138 BRIARCLIFF DR, MARLBORO, NJ, 07751": {
+    "lat": 40.3486745,
+    "lng": -74.2555377
+  },
+  "138 BRIARCLIFF DRIVE, MARLBORO, NJ, 07751": {
+    "lat": 40.3486745,
+    "lng": -74.2555377
+  },
+  "2131 WYOMING AVE NW WASHINGTON DC 20008, WASHINGTON, DC, 20008": null,
+  "4301 PARK AVE APT 3F, UNION CITY, NJ, 07087": null,
+  "9608 ENCLAVE PL, PORT ST LUCIE, FL, 34986": null,
+  "39 NORTH GRANT AVE, COLONIA, NJ, 07067": null,
+  "620 S LE JEUNE RD, CORAL GABLES, FL, 33134": {
+    "lat": 25.7573677,
+    "lng": -80.2629893
+  },
+  "186 5TH AVENUE, NEW YORK, NY, 10010": {
+    "lat": 40.7415367,
+    "lng": -73.989972
+  },
+  "186 5TH AVE, FL5, NEW YORK, NY": null,
+  "1037 US46 SUITE 103, CLIFTON, NJ, 07013": null,
+  "902 FROSTWOOD DR, HOUSTON, TX, 77024": {
+    "lat": 29.7810218,
+    "lng": -95.5467569
+  },
+  "25 CALLAN AVE, STATEN ISLAND, NY, 10304": {
+    "lat": 40.5997944,
+    "lng": -74.1082907
+  },
+  "93 WINSTON DRIVE, MATAWAN, NJ, 07747": null,
+  "14 GREENSHADOWS LANE, PRINCETON, NJ, 08540": null,
+  "14 GREENSHADOWS LN, PRINCETON, NJ, 08540": null,
+  "16441 WESTGATE ST, OVERLAND PARK, KS, 66221": {
+    "lat": 38.829728,
+    "lng": -94.732097
+  },
+  "991 ALPINE DR, TEANECK, NJ, 07668": {
+    "lat": 40.8877375,
+    "lng": -74.0021779
+  },
+  "16326 HEATHROW DR, TAMPA, FL, 34647": {
+    "lat": 28.1161807,
+    "lng": -82.3962861
+  },
+  "16144 CASTELLI CIR, CHINO HILLS, CA, 91709-3839": {
+    "lat": 33.9600921,
+    "lng": -117.7335729
+  },
+  "265 ORANGE STREET, NEW HAVEN, CT, 06510": {
+    "lat": 41.3079491,
+    "lng": -72.9221267
+  },
+  "10249 ARBOR SIDE DR, TAMPA, FL, 33647": {
+    "lat": 28.1316473,
+    "lng": -82.3141083
+  },
+  "17407 WOODFALLS LANE, RICHMOND, TX, 77407": null,
+  "32 DAUPHINE STREET, NEWPORT BEACH, CA, 92657": null,
+  "5775 COLLINS AVE, MIAMI BEACH, FL, MIAMI BEACH": {
+    "lat": 25.8393614,
+    "lng": -80.1209369
+  },
+  "201 MONTGOMERY STREET, JERSEY CITY, NJ, 07302": {
+    "lat": 40.7173782,
+    "lng": -74.0436782
+  },
+  "36 GILBERT AVE, PARAMUS, NJ, 07652": {
+    "lat": 40.9414841,
+    "lng": -74.0582691
+  },
+  "164 OLD BEEKMAN ROAD, SOUTH BRUNSWICK TOWNSHIP, NJ, 08852": null,
+  "839 GARDEN STREET, HOBOKEN, NJ, 07030": {
+    "lat": 40.7468209,
+    "lng": -74.0297598
+  },
+  "3453 WILLOWRUN DR, AUSTIN, TX, 78704": {
+    "lat": 30.225372,
+    "lng": -97.7548752
+  },
+  "100 PARK AVE APT 3604, FORT LEE, NJ, 07024": null,
+  "149 MC ADOO AVE., JERSEY CITY, NJ, 07305": null,
+  "171 ALDER AVE, WAYNE, NJ, 07470": {
+    "lat": 41.0031492,
+    "lng": -74.2700057
+  },
+  "13058 ACORO ST, CERRITOS, CA, 90703-8600": {
+    "lat": 33.8719128,
+    "lng": -118.0538887
+  },
+  "25 MATTBEN DR., WARREN, NJ, 07059": {
+    "lat": 40.6009951,
+    "lng": -74.513534
+  },
+  "8 REVERE CT, PRINCETON, NJ, 08550": null,
+  "440 MONTEREY AVENUE, PELHAM, NY, 10803": {
+    "lat": 40.9005015,
+    "lng": -73.8045135
+  },
+  "25 MATTBEN DRIVE, WARREN, NJ, 07059": {
+    "lat": 40.6009951,
+    "lng": -74.513534
+  },
+  "93 WINSTON DR, MATAWAN, NJ, 07747": null,
+  "25 MATTBEN DR, WARREN, NJ, 07059": {
+    "lat": 40.6009951,
+    "lng": -74.513534
+  },
+  "19 FLOYD STREET, JERSEY CITY, NJ, 07306": {
+    "lat": 40.7408959,
+    "lng": -74.0614153
+  },
+  "19 JEFFERSON ST, 4C, HACKENSACK, NJ": null,
+  "160 FRIENDSHIP RD, CRANBURY, NJ, 08512": null,
+  "1518 CRYSTAL HILLS DR, HOUSTON, TX, 77077": {
+    "lat": 29.7518169,
+    "lng": -95.5970184
+  },
+  "236 JEWETT AVE, APT.4, NJ, 07304": null,
+  "3515 LAKEVIEW CIR, LEAVENWORTH, KS, 66048": {
+    "lat": 39.2839196,
+    "lng": -94.9149791
+  },
+  "75 SPRING BROOK ROAD, MORRISTOWN, NJ, 07960": null,
+  "157 ELLIOTT PLACE, SOUTH PLAINFIELD, NJ, 07080": {
+    "lat": 40.5679233,
+    "lng": -74.4194044
+  },
+  "14 UPPER KINGTOWN ROAD, PITTSTOWN, NJ, 08867": null,
+  "1046 OXFORD WAY, STOCKTON, CA, 95204": {
+    "lat": 37.9720767,
+    "lng": -121.3113106
+  },
+  "27 WILLIAM PENN RD, WARREN, NJ, 07059": {
+    "lat": 40.645163,
+    "lng": -74.53585
+  },
+  "119 NORTHBROOK DR, GIBSONIA, PA, 15044": null,
+  "333 GRAND STREET APT 822, JERSEY CITY, NJ, 07302": null,
+  "33 HASBROUCK DR, FRANKLIN PARK, NJ, 08823": null,
+  "24 HARDING AVENUE, EDISON, NJ, 08820": {
+    "lat": 40.569614,
+    "lng": -74.379651
+  },
+  "133 TAHOMA RD, LEXINGTON, KY, 40503": {
+    "lat": 38.0131186,
+    "lng": -84.5120575
+  },
+  "13236 HAWTHORNE BLVD, HAWTHORNE, CA, 90250-5804": {
+    "lat": 33.9126377,
+    "lng": -118.3522827
+  },
+  "6911 PRINCE GEORGES AVE, TAKOMA PARK, MD, 20912": {
+    "lat": 38.9752453,
+    "lng": -76.9990168
+  },
+  "712 HARTNELL PLACE, SACRAMENTO, CA, 95825": {
+    "lat": 38.565622,
+    "lng": -121.4154802
+  },
+  "1849 MCCLARY STREET, GARLAND, TX, 75040": {
+    "lat": 32.967132,
+    "lng": -96.6049772
+  },
+  "32 WINDING WAY, WOODLAND PARK, NJ, 07424-2669": {
+    "lat": 40.8861415,
+    "lng": -74.1957039
+  },
+  "79 RITTENHOUSE ROAD, STOCKTON, NJ, 08559": null,
+  "2301 BAYSHORE BLVD, TAMPA, FL, 33606": {
+    "lat": 27.925008,
+    "lng": -82.4832481
+  },
+  "55 APPLETON STREET, CAMBRIDGE, MA, 02138": {
+    "lat": 42.3788878,
+    "lng": -71.1340991
+  },
+  "16 MATISSE CT, PLEASANT HILL, CA, 94523": {
+    "lat": 37.9396255,
+    "lng": -122.063312
+  },
+  "30 CONSTITUTION WAY, 309, JERSEY CITY, NJ": {
+    "lat": 40.6898665,
+    "lng": -74.0720158
+  },
+  "1576 W. ALEX BELL RD, DAYTON, OH, 45459": null,
+  "115 N MIDLAND AVENUE, SADDLE BROOK, NJ, 07663": {
+    "lat": 40.9090561,
+    "lng": -74.1074028
+  },
+  "43 PROSPECT AVENUE, BAYONNE, NJ, 07002": {
+    "lat": 40.6612469,
+    "lng": -74.1158033
+  },
+  "7930 KENNEDY HILL DR, SAN ANTONIO, TX, 78235-4440": null,
+  "1079 AMBERLEY CROSSING DR, BELMONT, NC, 28012": {
+    "lat": 35.223319,
+    "lng": -81.0521705
+  },
+  "1372 S HIDDEN CREEK DR, SALINE, MI, 48176": null,
+  "2 ABBOTSFORD, AVON, CT, 06001": {
+    "lat": 41.8140622,
+    "lng": -72.8109269
+  },
+  "5 SUMMIT DR, EAST BRUNSWICK, NJ, 08816-3440": null,
+  "25 INTREPID PL, JERSEY CITY, NJ, 07305": {
+    "lat": 40.68843,
+    "lng": -74.071304
+  },
+  "601 EWING ST, PRINCETON, NJ, 08540": {
+    "lat": 40.3709962,
+    "lng": -74.6574391
+  },
+  "18 RAVENSWOOD LANE, SCOTCH PLAINS, NJ, 07076": {
+    "lat": 40.6089896,
+    "lng": -74.3931882
   }
 }

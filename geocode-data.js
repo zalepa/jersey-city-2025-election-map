@@ -21,6 +21,7 @@ const CANDIDATES = [
   { csvFile: 'watterman.csv' },
   { csvFile: 'odea.csv' },
   { csvFile: 'mc_greevey.csv' },
+  { csvFile: 'ali.csv' },
 ];
 
 // Load existing cache

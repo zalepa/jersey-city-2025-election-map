@@ -71,6 +71,11 @@ const CANDIDATES = [
     id: 'watterman',
     name: 'Joyce Watterman',
     csvFile: 'watterman.csv'
+  },
+  {
+    id: 'ali',
+    name: 'Mussab Ali',
+    csvFile: 'ali.csv'
   }
 ];
 
