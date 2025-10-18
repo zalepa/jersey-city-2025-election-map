@@ -18,11 +18,13 @@
 let map;
 let markersLayer;
 let currentContributions = []; // Store current contributions for filtering
+let drawnItems; // Layer group for drawn shapes
+let currentShape = null; // Currently active drawn shape
 
 // Map configuration
 const MAP_CONFIG = {
   center: [40.7178, -74.0431], // Jersey City, NJ
-  zoom: 12,
+  zoom: 14,
   maxZoom: 18,
   minZoom: 2  // Allow zooming out to world view
 };
@@ -65,6 +67,63 @@ function initMap() {
 
   // Create a layer group for markers (allows easy clearing)
   markersLayer = L.layerGroup().addTo(map);
+
+  // Create a layer group for drawn shapes
+  drawnItems = new L.FeatureGroup();
+  map.addLayer(drawnItems);
+
+  // Initialize drawing controls
+  const drawControl = new L.Control.Draw({
+    position: 'topright',
+    draw: {
+      polygon: {
+        allowIntersection: false,
+        shapeOptions: {
+          color: '#e74c3c',
+          weight: 2
+        }
+      },
+      rectangle: {
+        shapeOptions: {
+          color: '#e74c3c',
+          weight: 2
+        }
+      },
+      circle: false,
+      circlemarker: false,
+      marker: false,
+      polyline: false
+    },
+    edit: {
+      featureGroup: drawnItems,
+      remove: true
+    }
+  });
+  map.addControl(drawControl);
+
+  // Handle shape creation
+  map.on(L.Draw.Event.CREATED, function(event) {
+    const layer = event.layer;
+
+    // Remove previous shape if exists
+    if (currentShape) {
+      drawnItems.removeLayer(currentShape);
+    }
+
+    // Add new shape
+    drawnItems.addLayer(layer);
+    currentShape = layer;
+
+    // Re-apply filter with the new shape
+    applyFilter(false);
+  });
+
+  // Handle shape deletion
+  map.on(L.Draw.Event.DELETED, function() {
+    currentShape = null;
+    // Re-apply filter without shape restriction
+    applyFilter(false);
+  });
 }
 
 /**
@@ -175,7 +234,7 @@ function applyFilter(fitBounds = true) {
   // Clear existing markers
   clearMarkers();
 
-  // Filter contributions based on selection
+  // Filter contributions based on type selection
   let filteredContributions;
   if (filterValue === 'all') {
     filteredContributions = currentContributions;
@@ -185,11 +244,53 @@ function applyFilter(fitBounds = true) {
     filteredContributions = currentContributions.filter(c => !c.isIndividual);
   }
 
+  // Further filter by geographic shape if one is drawn
+  if (currentShape) {
+    filteredContributions = filteredContributions.filter(contribution => {
+      const point = L.latLng(contribution.lat, contribution.lng);
+
+      // Check if point is within the shape
+      if (currentShape instanceof L.Rectangle || currentShape instanceof L.Polygon) {
+        return isPointInShape(point, currentShape);
+      }
+
+      return true;
+    });
+  }
+
   // Plot filtered contributions
   plotContributions(filteredContributions, fitBounds);
 
   // Update count
   updateContributionCount(filteredContributions.length);
+}
+
+/**
+ * Check if a point is inside a polygon or rectangle
+ */
+function isPointInShape(point, shape) {
+  // For rectangles and polygons, use Leaflet's built-in bounds checking
+  if (shape instanceof L.Rectangle) {
+    return shape.getBounds().contains(point);
+  } else if (shape instanceof L.Polygon) {
+    // Use ray casting algorithm for polygon containment
+    const latlngs = shape.getLatLngs()[0]; // Get first ring of polygon
+    let inside = false;
+
+    for (let i = 0, j = latlngs.length - 1; i < latlngs.length; j = i++) {
+      const xi = latlngs[i].lat, yi = latlngs[i].lng;
+      const xj = latlngs[j].lat, yj = latlngs[j].lng;
+
+      const intersect = ((yi > point.lng) !== (yj > point.lng))
+          && (point.lat < (xj - xi) * (point.lng - yi) / (yj - yi) + xi);
+
+      if (intersect) inside = !inside;
+    }
+
+    return inside;
+  }
+
+  return false;
 }
 
 /**
