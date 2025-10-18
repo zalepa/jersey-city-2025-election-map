@@ -1,99 +1,248 @@
 # Campaign Contributions Map
 
-A simple ExpressJS application that visualizes campaign contribution data on an interactive map using OpenStreetMap and Leaflet.js.
+An interactive web application that visualizes campaign contribution data on a map using Google Maps Geocoding API, OpenStreetMap tiles, and Leaflet.js.
+
+![Campaign Contributions Map](https://img.shields.io/badge/status-active-success)
+![Node.js](https://img.shields.io/badge/node-%3E%3D14.0.0-brightgreen)
+![License](https://img.shields.io/badge/license-ISC-blue)
 
 ## Features
 
-- Interactive map with OpenStreetMap tiles (no API key required)
-- Candidate selector to switch between different campaigns
-- Different marker colors for individual vs business contributions
-- Detailed popups showing contributor information
-- Fullscreen map with small header and footer
-- Responsive design
-- Well-documented code for easy extension
+- 🗺️ **Interactive Map** - Powered by Leaflet.js with CartoDB Positron tiles for a clean, minimal look
+- 🎯 **Multi-Candidate Support** - Easy switching between different campaigns via dropdown selector
+- 🔵🔴 **Visual Distinction** - Different marker colors for individual (blue) vs business (red) contributions
+- 📏 **Area-Proportional Sizing** - Toggle between fixed-size markers and area-proportional sizing to visualize contribution amounts
+- 🎨 **Drawing Tools** - Draw rectangles and polygons to filter contributions by geographic area
+- 🔍 **Smart Filtering** - Filter by contributor type (All/Individual/Business)
+- 🚀 **Pre-Geocoded Data** - Server-side geocoding with Google Maps API for instant map loads
+- 📱 **Responsive Design** - Works seamlessly on desktop, tablet, and mobile devices
+- 🏗️ **Well-Documented Code** - Comprehensive comments and documentation for easy extension
+
+## Table of Contents
+
+- [Quick Start](#quick-start)
+- [Installation](#installation)
+- [Project Structure](#project-structure)
+- [Data Workflow](#data-workflow)
+- [Configuration](#configuration)
+- [API Endpoints](#api-endpoints)
+- [Technology Stack](#technology-stack)
+- [Development](#development)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Quick Start
+
+```bash
+# 1. Clone the repository
+git clone <repository-url>
+cd 2025-campaign
+
+# 2. Install dependencies
+npm install
+
+# 3. Set up environment variables
+cp .env.example .env
+# Edit .env and add your Google Maps API key
+
+# 4. (Optional) Process and geocode your data
+npm run dedupe    # Aggregate contributions by donor
+npm run geocode   # Geocode all addresses
+
+# 5. Start the server
+npm start
+
+# 6. Open in browser
+open http://localhost:3000
+```
 
 ## Installation
 
-1. Install dependencies:
-```bash
-npm install
-```
+### Prerequisites
 
-2. Start the server:
-```bash
-npm start
-```
+- **Node.js** >= 14.0.0
+- **npm** >= 6.0.0
+- **Google Maps API Key** (for geocoding)
 
-3. Open your browser and navigate to:
-```
-http://localhost:3000
-```
+### Steps
+
+1. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+2. **Set up environment variables:**
+
+   Create a `.env` file in the project root:
+   ```bash
+   GOOGLE_MAPS_API_KEY=your_api_key_here
+   ```
+
+   Get a Google Maps API key:
+   - Go to [Google Cloud Console](https://console.cloud.google.com/)
+   - Enable the Geocoding API
+   - Create an API key
+
+3. **Start the server:**
+   ```bash
+   npm start
+   ```
+
+4. **Access the application:**
+
+   Open your browser to `http://localhost:3000`
 
 ## Project Structure
 
 ```
 2025-campaign/
-├── server.js           # Express server with API endpoints
-├── public/             # Static files
-│   ├── index.html      # Main HTML page
-│   ├── styles.css      # Styling for fullscreen map layout
-│   └── app.js          # Client-side JavaScript for map functionality
-├── solomon.csv         # James Solomon contribution data
-├── mc_greevey.csv      # Jim McGreevey contribution data
-└── package.json        # Project dependencies
+├── server.js              # Express server with API endpoints
+├── geocode-data.js        # Pre-geocoding script for batch processing
+├── dedupe-data.js         # Data deduplication script
+├── package.json           # Project dependencies and scripts
+├── .env                   # Environment variables (not in git)
+├── .env.example           # Example environment variables
+├── geocode-cache.json     # Cached geocoding results
+├── data/                  # Processed CSV files (deduplicated)
+│   ├── solomon.csv
+│   ├── freeman.csv
+│   ├── watterman.csv
+│   ├── odea.csv
+│   ├── mc_greevey.csv
+│   └── ali.csv
+├── raw/                   # Raw CSV files (original data)
+│   └── *.csv
+└── public/                # Static frontend files
+    ├── index.html         # Main HTML page
+    ├── styles.css         # Styling for fullscreen map layout
+    └── app.js             # Client-side JavaScript for map functionality
 ```
 
-## How to Add a New Candidate
+## Data Workflow
 
-Adding a new candidate is straightforward:
+### 1. Adding Raw Data
 
-### Step 1: Add the CSV File
+Place raw CSV files in the `raw/` directory. Each CSV should have these columns:
 
-Place the new candidate's CSV file in the root directory. The CSV should have the following columns:
-- `IsIndividual` (Y/N)
-- `FirstName`, `MI`, `LastName`, `Suffix` (for individuals)
-- `NonIndName` (for businesses)
-- `Street`, `City`, `State`, `ZIP`
-- `ContributionAmount`
-- `ContributionDate`
-- `ContributorType`
+**Required Columns:**
+- `IsIndividual` - "Y" or "N"
+- `FirstName`, `MI`, `LastName`, `Suffix` - For individual contributors
+- `NonIndName` - For business contributors
+- `Street`, `City`, `State`, `ZIP` - Address information
+- `ContributionAmount` - Numeric amount
+- `ContributionDate` - Date of contribution
+- `ContributorType` - Type of contributor
 
-### Step 2: Update Server Configuration
+### 2. Deduplicating Data
 
-In `server.js`, add the candidate to the `CANDIDATES` array (around line 26):
+Aggregate contributions by donor:
+
+```bash
+npm run dedupe
+```
+
+This script:
+- Combines multiple contributions from the same donor
+- Sums contribution amounts
+- Outputs deduplicated CSV files to `data/` directory
+
+### 3. Geocoding Addresses
+
+Pre-geocode all addresses using Google Maps API:
+
+```bash
+npm run geocode
+```
+
+This script:
+- Reads all CSV files from `data/` directory
+- Geocodes each unique address using Google Maps API
+- Handles PO Boxes (geocodes to city/state level)
+- Cleans addresses (removes apartment numbers, building names, etc.)
+- Caches results to `geocode-cache.json`
+- Processes ~20 addresses/second (respects API rate limits)
+
+**Address Cleaning Features:**
+- Removes apartment designators (APT, UNIT, STE, etc.)
+- Strips building names (e.g., "CAST IRON LOFTS II")
+- Handles PO Boxes by geocoding city/state only
+- Fallback extraction for complex addresses
+
+### 4. Adding a New Candidate
+
+After preparing the data, add the candidate to `server.js`:
 
 ```javascript
 const CANDIDATES = [
+  // ... existing candidates ...
   {
-    id: 'solomon',
-    name: 'James Solomon',
-    csvFile: 'solomon.csv'
-  },
-  {
-    id: 'mcgreevey',
-    name: 'Jim McGreevey',
-    csvFile: 'mc_greevey.csv'
-  },
-  // Add your new candidate here:
-  {
-    id: 'new-candidate',      // Unique identifier (lowercase, no spaces)
-    name: 'New Candidate',    // Display name
-    csvFile: 'newcandidate.csv'  // CSV file name
+    id: 'new-candidate',           // Unique identifier (lowercase, no spaces)
+    name: 'New Candidate Name',    // Display name
+    csvFile: 'new_candidate.csv'   // Filename in data/ directory
   }
 ];
 ```
 
-### Step 3: Restart the Server
+Also update `geocode-data.js` to include the new CSV file:
 
-```bash
-npm start
+```javascript
+const CANDIDATES = [
+  // ... existing candidates ...
+  { csvFile: 'new_candidate.csv' }
+];
 ```
 
-The new candidate will automatically appear in the selector dropdown!
+Then run:
+```bash
+npm run geocode  # Geocode the new candidate's addresses
+npm start        # Start the server
+```
+
+## Configuration
+
+### Environment Variables
+
+Create a `.env` file with:
+
+```bash
+# Google Maps API Key (required for geocoding)
+GOOGLE_MAPS_API_KEY=your_api_key_here
+
+# Server Port (optional, defaults to 3000)
+PORT=3000
+```
+
+### Map Configuration
+
+Edit `public/app.js` to customize map settings:
+
+```javascript
+const MAP_CONFIG = {
+  center: [40.7178, -74.0431],  // Default center (Jersey City, NJ)
+  zoom: 14,                      // Default zoom level
+  maxZoom: 18,
+  minZoom: 2
+};
+```
+
+### Marker Sizing
+
+Edit `public/app.js` to adjust area-proportional sizing:
+
+```javascript
+function calculateMarkerSize(amount) {
+  const minSize = 4;      // Minimum radius in pixels
+  const maxSize = 24;     // Maximum radius in pixels
+  const minAmount = 50;   // Contributions below this get min size
+  const maxAmount = 5000; // Contributions above this get max size
+  // ...
+}
+```
 
 ## API Endpoints
 
 ### GET /api/candidates
+
 Returns a list of all available candidates.
 
 **Response:**
@@ -111,24 +260,30 @@ Returns a list of all available candidates.
 ```
 
 ### GET /api/contributions/:candidateId
-Returns contribution data for a specific candidate.
+
+Returns geocoded contribution data for a specific candidate.
+
+**Parameters:**
+- `candidateId` - The unique identifier for the candidate
 
 **Response:**
 ```json
 {
   "candidate": "James Solomon",
-  "totalContributions": 2178,
+  "totalContributions": 1523,
   "contributions": [
     {
-      "isIndividual": false,
-      "name": "PAVONIA PHARMACY",
-      "address": "600 PAVONIA AVE",
+      "isIndividual": true,
+      "name": "John Doe",
+      "address": "123 MAIN ST",
       "city": "JERSEY CITY",
       "state": "NJ",
-      "zip": "07306-2929",
+      "zip": "07302",
+      "lat": 40.7178,
+      "lng": -74.0431,
       "amount": 500,
       "date": "12/16/24",
-      "contributorType": "BUSINESS/CORP"
+      "contributorType": "INDIVIDUAL"
     }
   ]
 }
@@ -136,65 +291,71 @@ Returns contribution data for a specific candidate.
 
 ## Technology Stack
 
-- **Backend:** Express.js (Node.js web framework)
-- **CSV Parsing:** csv-parser
-- **Frontend:** Vanilla JavaScript (no frameworks)
-- **Styling:** Vanilla CSS
-- **Map:** Leaflet.js with OpenStreetMap tiles
-- **Geocoding:** Nominatim (OpenStreetMap's free geocoding service)
+### Backend
+- **Express.js** - Web framework for Node.js
+- **csv-parser** - Streaming CSV parser
+- **node-fetch** - HTTP client for API requests
+- **dotenv** - Environment variable management
 
-## Key Features Explained
+### Frontend
+- **Leaflet.js** - Interactive map library
+- **Leaflet.draw** - Drawing tools plugin
+- **CartoDB Positron** - Minimal map tiles
+- **Vanilla JavaScript** - No frameworks, just plain JS
+- **CSS3** - Modern styling with flexbox
 
-### Marker Colors
-- **Blue markers:** Individual contributions
-- **Red markers:** Business/corporate contributions
+### APIs & Services
+- **Google Maps Geocoding API** - Address to coordinates conversion
+- **OpenStreetMap** - Map tiles via CartoDB
 
-### Geocoding
-Addresses are geocoded client-side using Nominatim. The app:
-- Processes contributions in batches to respect rate limits
-- Caches geocoded addresses to avoid repeated requests
-- Shows progress as markers are plotted
+## Development
 
-### Map Controls
-- Pan and zoom the map to explore contributions
-- Click on markers to see detailed contribution information
-- Use the candidate selector to switch between campaigns
+### NPM Scripts
 
-## Customization Ideas
+```bash
+# Start the development server
+npm start
 
-Here are some ways you can extend this application:
+# Deduplicate raw data
+npm run dedupe
 
-1. **Add Filtering:**
-   - Filter by contribution amount ranges
-   - Filter by date ranges
-   - Filter by contributor type
+# Geocode addresses (requires Google API key)
+npm run geocode
+```
 
-2. **Add Analytics:**
-   - Show total contribution amounts
-   - Display contribution statistics
-   - Add charts and graphs
+### Key Files to Know
 
-3. **Improve Performance:**
-   - Add marker clustering for better performance with many markers
-   - Implement server-side geocoding and caching
+- **`server.js`** - Main server file, API endpoints, geocoding logic
+- **`public/app.js`** - Frontend map logic, marker rendering, filtering
+- **`geocode-data.js`** - Batch geocoding script
+- **`dedupe-data.js`** - Data aggregation script
 
-4. **Additional Visualizations:**
-   - Add heatmap layer option
-   - Show contribution trends over time
-   - Add district/ward boundaries
+### Adding Features
 
-5. **Export Features:**
-   - Export filtered data to CSV
-   - Generate reports
-   - Print map views
+See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed development guidelines.
 
-## Notes
+**Common Extensions:**
+1. Add new filter options (date range, amount range)
+2. Add data export functionality
+3. Add analytics/statistics views
+4. Add marker clustering for performance
+5. Add heatmap visualization option
 
-- Geocoding is done client-side using Nominatim, which is free but rate-limited
-- The app processes contributions in batches to respect rate limits
-- Not all addresses may geocode successfully (some may be incomplete or invalid)
-- The map is centered on Jersey City by default (can be changed in `public/app.js`)
+## Contributing
+
+Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 ## License
 
 ISC
+
+## Support
+
+For questions or issues:
+1. Check existing [Issues](https://github.com/zalepa/jersey-city-2025-election-map/issues)
+2. Open a new issue with detailed information
+3. Include steps to reproduce any bugs
+
+---
+
+Built with ❤️ for transparent campaign finance visualization
