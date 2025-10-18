@@ -91,21 +91,134 @@ function saveGeocodeCache() {
 }
 
 /**
+ * Clean street address by removing apartment numbers, unit designators, and building names
+ * that can confuse geocoding APIs.
+ *
+ * Examples:
+ * "217 NEWARK AVE APT 515" -> "217 NEWARK AVE"
+ * "300 COLES STREET CAST IRON LOFTS II APT 614" -> "300 COLES STREET"
+ */
+function cleanStreetAddress(address) {
+  if (!address) return address;
+
+  let cleaned = address.trim();
+
+  // Common patterns for secondary address designators
+  const patterns = [
+    // Apartment variations (APT, APT., APARTMENT, etc.)
+    /\s+(APT\.?|APARTMENT)\s+[A-Z0-9#\-]+.*$/i,
+    // Unit variations (UNIT, UNIT#, etc.)
+    /\s+(UNIT\.?|UNIT#)\s+[A-Z0-9#\-]+.*$/i,
+    // Suite variations (STE, STE., SUITE, etc.)
+    /\s+(STE\.?|SUITE)\s+[A-Z0-9#\-]+.*$/i,
+    // Floor variations (FL, FL., FLOOR, etc.)
+    /\s+(FL\.?|FLOOR)\s+[A-Z0-9#\-]+.*$/i,
+    // Building or room numbers (BLDG, RM, etc.)
+    /\s+(BLDG\.?|BUILDING|RM\.?|ROOM)\s+[A-Z0-9#\-]+.*$/i,
+    // Hash/pound sign followed by number (common for unit numbers)
+    /\s+#[A-Z0-9\-]+.*$/i,
+  ];
+
+  // Apply each pattern
+  for (const pattern of patterns) {
+    cleaned = cleaned.replace(pattern, '');
+  }
+
+  // After removing explicit designators, clean up building/complex names
+  // Match building keywords that are preceded by a complete street address
+  // This ensures we don't remove "STREET" or "AVENUE" which are part of the street name
+  // We look for patterns after common street suffixes
+  const streetSuffixPattern = /^(.*?(?:STREET|ST|AVENUE|AVE|ROAD|RD|BOULEVARD|BLVD|LANE|LN|DRIVE|DR|COURT|CT|PLACE|PL|CIRCLE|CIR|WAY|PKWY|PARKWAY))\s+(.*)$/i;
+  const match = cleaned.match(streetSuffixPattern);
+
+  if (match) {
+    const streetPart = match[1];  // e.g., "300 COLES STREET"
+    const remainder = match[2];    // e.g., "CAST IRON LOFTS II"
+
+    // Check if remainder contains building keywords
+    const hasBuildingKeyword = /(?:BUILDING|LOFTS?|TOWERS?|PLAZA|CENTER|CENTRE|MANOR|ESTATES?|VILLAGE|COMPLEX|HOMES|APARTMENTS?)/i.test(remainder);
+
+    if (hasBuildingKeyword) {
+      // Keep only the street part
+      cleaned = streetPart;
+    }
+  }
+
+  return cleaned.trim();
+}
+
+/**
+ * Extract core street address by finding street type keywords
+ * Examples:
+ * "70 CHRISTOPHER COLUMBUS DR PH 6" -> "70 CHRISTOPHER COLUMBUS DR"
+ * "29 CLAREMONT AVE # 5N" -> "29 CLAREMONT AVE"
+ */
+function extractCoreStreetAddress(address) {
+  if (!address) return address;
+
+  const parts = address.split(/\s+/);
+
+  // Common street type abbreviations and full names
+  const streetTypes = [
+    'STREET', 'ST', 'AVENUE', 'AVE', 'ROAD', 'RD', 'BOULEVARD', 'BLVD',
+    'LANE', 'LN', 'DRIVE', 'DR', 'COURT', 'CT', 'PLACE', 'PL', 'CIRCLE', 'CIR',
+    'WAY', 'PARKWAY', 'PKWY', 'PLAZA', 'PLZ', 'TERRACE', 'TER', 'TRAIL', 'TRL',
+    'HIGHWAY', 'HWY', 'EXPRESSWAY', 'EXPY', 'CREEK', 'PATH', 'LOOP'
+  ];
+
+  // Find the last occurrence of a street type
+  let lastStreetTypeIndex = -1;
+  for (let i = parts.length - 1; i >= 0; i--) {
+    if (streetTypes.includes(parts[i].toUpperCase())) {
+      lastStreetTypeIndex = i;
+      break;
+    }
+  }
+
+  // If we found a street type, take everything up to and including it
+  if (lastStreetTypeIndex >= 0) {
+    return parts.slice(0, lastStreetTypeIndex + 1).join(' ');
+  }
+
+  return address;
+}
+
+/**
  * Geocode an address using Nominatim
  * Results are cached to avoid repeated API calls
  */
 async function geocodeAddress(address, city, state, zip) {
-  // Build full address string
-  const addressParts = [address, city, state, zip].filter(Boolean);
-  const fullAddress = addressParts.join(', ');
+  // Check cache using original address first
+  const originalAddressParts = [address, city, state, zip].filter(Boolean);
+  const originalFullAddress = originalAddressParts.join(', ');
 
-  // Check cache first
-  if (geocodeCache[fullAddress]) {
-    return geocodeCache[fullAddress];
+  if (geocodeCache[originalFullAddress]) {
+    return geocodeCache[originalFullAddress];
   }
 
+  // Handle PO BOX addresses - just geocode city/state
+  const isPOBox = address && /^PO\s+BOX/i.test(address.trim());
+
+  let addressToGeocode;
+  if (isPOBox) {
+    // For PO Boxes, only use city, state, zip
+    addressToGeocode = [city, state, zip].filter(Boolean).join(', ');
+  } else {
+    // Clean the street address before geocoding
+    const cleanedAddress = cleanStreetAddress(address);
+    addressToGeocode = [cleanedAddress, city, state, zip].filter(Boolean).join(', ');
+  }
+
+  // Check cache with cleaned/processed address
+  if (geocodeCache[addressToGeocode]) {
+    geocodeCache[originalFullAddress] = geocodeCache[addressToGeocode];
+    saveGeocodeCache();
+    return geocodeCache[addressToGeocode];
+  }
+
+  // First attempt: try with cleaned address
   try {
-    const query = encodeURIComponent(fullAddress);
+    const query = encodeURIComponent(addressToGeocode);
     const url = `https://nominatim.openstreetmap.org/search?format=json&q=${query}&limit=1`;
 
     const response = await fetch(url, {
@@ -121,19 +234,56 @@ async function geocodeAddress(address, city, state, zip) {
         lat: parseFloat(results[0].lat),
         lng: parseFloat(results[0].lon)
       };
-
-      // Cache the result
-      geocodeCache[fullAddress] = coords;
+      geocodeCache[addressToGeocode] = coords;
+      geocodeCache[originalFullAddress] = coords;
       saveGeocodeCache();
-
       return coords;
     }
   } catch (error) {
-    console.error('Geocoding error for:', fullAddress, error.message);
+    console.error('Geocoding error for:', addressToGeocode, error.message);
   }
 
-  // Cache null result to avoid retrying
-  geocodeCache[fullAddress] = null;
+  // Second attempt: if not a PO Box and first attempt failed, try extracting core address
+  if (!isPOBox && address) {
+    const coreAddress = extractCoreStreetAddress(address);
+
+    // Only try if we actually extracted something different
+    if (coreAddress !== address && coreAddress !== cleanStreetAddress(address)) {
+      const fallbackAddressToGeocode = [coreAddress, city, state, zip].filter(Boolean).join(', ');
+
+      try {
+        const query = encodeURIComponent(fallbackAddressToGeocode);
+        const url = `https://nominatim.openstreetmap.org/search?format=json&q=${query}&limit=1`;
+
+        const response = await fetch(url, {
+          headers: {
+            'User-Agent': 'CampaignContributionsMap/1.0'
+          }
+        });
+
+        const results = await response.json();
+
+        if (results && results.length > 0) {
+          const coords = {
+            lat: parseFloat(results[0].lat),
+            lng: parseFloat(results[0].lon)
+          };
+          console.log(`  ✓ Fallback succeeded: "${originalFullAddress}" -> "${fallbackAddressToGeocode}"`);
+          geocodeCache[addressToGeocode] = coords;
+          geocodeCache[fallbackAddressToGeocode] = coords;
+          geocodeCache[originalFullAddress] = coords;
+          saveGeocodeCache();
+          return coords;
+        }
+      } catch (error) {
+        console.error('Fallback geocoding error for:', fallbackAddressToGeocode, error.message);
+      }
+    }
+  }
+
+  // All attempts failed - cache null result
+  geocodeCache[addressToGeocode] = null;
+  geocodeCache[originalFullAddress] = null;
   saveGeocodeCache();
 
   return null;
