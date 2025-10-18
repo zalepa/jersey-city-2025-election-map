@@ -260,8 +260,8 @@ function handleKeyPress(event) {
     keySequence = keySequence.slice(-7);
   }
 
-  // Check if "streets" was typed
-  if (keySequence === 'streets') {
+  // Check if "names" was typed
+  if (keySequence === 'names') {
     if (!showContributorNames) {
       showContributorNames = true;
       console.log('Contributor names enabled');
