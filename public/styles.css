@@ -1,0 +1,239 @@
+/**
+ * Campaign Contributions Map Styles
+ *
+ * Layout:
+ * - Header: fixed height at top
+ * - Map: fills remaining space
+ * - Footer: fixed height at bottom
+ */
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+header {
+  background: #2c3e50;
+  color: white;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.header-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.controls label {
+  font-weight: 500;
+}
+
+#candidate-select {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  background: white;
+  color: #2c3e50;
+  min-width: 200px;
+}
+
+#candidate-select:focus {
+  outline: 2px solid #3498db;
+  outline-offset: 2px;
+}
+
+.filter-toggle {
+  display: flex;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.25rem;
+  border-radius: 4px;
+}
+
+.filter-toggle label {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+.filter-toggle label:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.filter-toggle input[type="radio"] {
+  cursor: pointer;
+}
+
+.filter-toggle input[type="radio"]:checked + label,
+.filter-toggle label:has(input[type="radio"]:checked) {
+  background: #3498db;
+  font-weight: 500;
+}
+
+.count {
+  background: #3498db;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+/* Map container - fills remaining space */
+#map {
+  flex: 1;
+  width: 100%;
+  position: relative;
+}
+
+/* Footer */
+footer {
+  background: #34495e;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.footer-content {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Legend */
+.legend {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.marker-symbol {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.marker-symbol.individual {
+  color: #3498db;
+}
+
+.marker-symbol.business {
+  color: #e74c3c;
+}
+
+/* Custom Leaflet marker styles */
+.individual-marker {
+  background-color: #3498db;
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.business-marker {
+  background-color: #e74c3c;
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Leaflet popup customization */
+.leaflet-popup-content-wrapper {
+  border-radius: 8px;
+}
+
+.leaflet-popup-content {
+  margin: 1rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.leaflet-popup-content strong {
+  color: #2c3e50;
+}
+
+/* Loading state */
+#candidate-select:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  header h1 {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+  .controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  #candidate-select {
+    width: 100%;
+  }
+
+  .filter-toggle {
+    justify-content: center;
+  }
+
+  .legend {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+  }
+}

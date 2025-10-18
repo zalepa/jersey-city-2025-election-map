@@ -1,0 +1,24 @@
+{
+  "name": "2025-campaign",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "dedupe": "node dedupe-data.js",
+    "geocode": "node geocode-data.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "politics",
+    "web app",
+    "jersey city"
+  ],
+  "author": "George Zalepa",
+  "license": "ISC",
+  "dependencies": {
+    "csv-parser": "^3.2.0",
+    "express": "^5.1.0",
+    "node-fetch": "^2.7.0"
+  }
+}
