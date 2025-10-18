@@ -138,6 +138,12 @@ function setupEventListeners() {
   filterRadios.forEach(radio => {
     radio.addEventListener('change', handleFilterChange);
   });
+
+  // Add sizing listeners
+  const sizingRadios = document.querySelectorAll('input[name="marker-sizing"]');
+  sizingRadios.forEach(radio => {
+    radio.addEventListener('change', handleSizingChange);
+  });
 }
 
 /**
@@ -223,6 +229,13 @@ async function loadContributions(candidateId) {
  */
 function handleFilterChange() {
   applyFilter(false); // Don't re-zoom when filtering
+}
+
+/**
+ * Handle sizing change
+ */
+function handleSizingChange() {
+  applyFilter(false); // Redraw markers with new sizing, don't re-zoom
 }
 
 /**
@@ -325,18 +338,51 @@ function plotContributions(contributions, fitBounds = true) {
 }
 
 /**
+ * Calculate marker size based on contribution amount and sizing mode
+ */
+function calculateMarkerSize(amount) {
+  const sizingMode = document.querySelector('input[name="marker-sizing"]:checked').value;
+
+  if (sizingMode === 'fixed') {
+    return 12; // Fixed size in pixels
+  }
+
+  // Area-proportional sizing
+  // For area to be proportional to amount, radius must be proportional to sqrt(amount)
+  // This ensures that a 2x larger contribution has 2x the area, not 4x
+
+  const minSize = 4;   // Minimum radius in pixels
+  const maxSize = 24;  // Maximum radius in pixels
+  const minAmount = 50;   // Contributions below this get min size
+  const maxAmount = 5000; // Contributions above this get max size
+
+  // Clamp amount to range
+  const clampedAmount = Math.max(minAmount, Math.min(maxAmount, amount));
+
+  // Calculate size using square root for area proportionality
+  // Normalize to 0-1 range, then apply sqrt, then scale to pixel range
+  const normalized = (clampedAmount - minAmount) / (maxAmount - minAmount);
+  const size = minSize + Math.sqrt(normalized) * (maxSize - minSize);
+
+  return Math.round(size);
+}
+
+/**
  * Add a marker to the map for a contribution
  */
 function addMarker(contribution, coords) {
   const isIndividual = contribution.isIndividual;
   const markerStyle = isIndividual ? MARKER_STYLES.individual : MARKER_STYLES.business;
 
+  // Calculate marker size based on contribution amount
+  const size = calculateMarkerSize(contribution.amount);
+
   // Create custom icon
   const icon = L.divIcon({
     className: markerStyle.className,
-    iconSize: [12, 12],
-    iconAnchor: [6, 6],
-    popupAnchor: [0, -6]
+    iconSize: [size, size],
+    iconAnchor: [size / 2, size / 2],
+    popupAnchor: [0, -size / 2]
   });
 
   // Create marker
